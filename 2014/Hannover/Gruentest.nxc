@@ -1,0 +1,42 @@
+#include "HTSMUX-driver.h"
+task main ()
+{
+  SetSensorColorFull( IN_2);
+  int farbwerte[];
+  int rotMin = 360;      //   394    380                                   w           schw                    grpn                         silber
+  int rotMax = 380;
+  int gruenMin = 370;    //    351    325                             500 420 450   220 170 230       //385 325 260//    390 324 320   570 460 570
+  int gruenMax = 390;
+  int blauMin = 310;      //   292     315
+  int blauMax = 330;
+
+smuxSetSensorLegoLight(msensor_S1_1, true);
+smuxSetSensorLegoLight(msensor_S1_2, true);
+smuxSetSensorLegoLight(msensor_S1_3, true);
+smuxSetSensorLegoLight(msensor_S1_4, true);
+  while(true)
+  {
+  ReadSensorColorRaw(IN_2, farbwerte);
+  int rotWert = farbwerte[0];
+  int gruenWert = farbwerte[1];
+  int blauWert = farbwerte[2];
+  OnFwd(OUT_AC, 100);
+  if(rotWert > rotMin && rotWert < rotMax &&
+     gruenWert > gruenMin && gruenWert < gruenMax &&
+     blauWert > blauMin && blauWert < blauMax)
+       {
+         RotateMotor(OUT_AC, -100, 200);
+         while(smuxSensorLegoLightNorm(msensor_S1_4) > 50) || smuxSensorLegoLightNorm(msensor_S1_3) > 40)
+         {
+           OnFwdSync(OUT_AC, 100, 100);
+         }
+         RotateMotor(OUT_A, 100 , 90);
+         RotateMotor(OUT_C , 100, 90);
+         while(lichtSensorlinks > schwelle)
+         {
+           OnFwd(Motorlinks, 100);
+           OnRev(motorrechts, 100);
+         }
+       }
+     }
+}

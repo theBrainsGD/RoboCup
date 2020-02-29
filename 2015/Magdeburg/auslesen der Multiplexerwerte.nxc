@@ -1,0 +1,46 @@
+#include "HTSMUX-driver.h"
+
+int Schwelle1 = 5;
+int Schwelle2 = 10;
+int Schwelle3 = 15;
+int Schwelle4 = 20;
+
+task main()
+{
+
+ SetSensor(IN_3, SENSOR_LOWSPEED);
+ if(HTSMUXscanPorts(IN_3) <> true)
+ {
+  TextOut(0, LCD_LINE5, "Fehler: Multiplexer");
+  Wait(1000);
+  ClearScreen();
+ }
+
+ smuxSetSensorLegoLight(msensor_S3_1, true);
+ smuxSetSensorLegoLight(msensor_S3_2, true);
+ smuxSetSensorLegoLight(msensor_S3_3, true);
+ smuxSetSensorLegoLight(msensor_S3_4, true);
+ 
+while(true)
+{
+ Schwelle1 = smuxSensorLegoLightNorm(msensor_S3_1);
+ Schwelle2 = smuxSensorLegoLightNorm(msensor_S3_2);
+ Schwelle3 = smuxSensorLegoLightNorm(msensor_S3_3);
+ Schwelle4 = smuxSensorLegoLightNorm(msensor_S3_4);
+
+    ClearScreen();
+   TextOut(5,LCD_LINE1," LRA:");
+   NumOut(50,LCD_LINE2, Schwelle1);
+   TextOut(5,LCD_LINE3," LRI:");
+   NumOut(50,LCD_LINE4, Schwelle2);
+   TextOut(5,LCD_LINE5," LLI:");
+   NumOut(50,LCD_LINE6, Schwelle3);
+   TextOut(5,LCD_LINE7," LLA:");
+   NumOut(50,LCD_LINE8, Schwelle4);
+   Wait(100);
+
+
+
+}
+}
+

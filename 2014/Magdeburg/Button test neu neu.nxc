@@ -1,0 +1,74 @@
+int SchwelleL = 20 ;
+int SchwelleR = 90 ;
+
+
+void Button()
+{
+   TextOut(0,LCD_LINE4,"  Will Schwell-");
+   TextOut(0,LCD_LINE5,"  wertL anpassen");
+   Wait(1500);
+   ClearScreen();
+   until (ButtonPressed(BTNCENTER, 1))
+   {
+    SchwelleL = Sensor(IN_2) + 2
+   }
+   Wait(25);
+   TextOut(0,LCD_LINE4,"  Passe Schwell-");
+   TextOut(0,LCD_LINE5,"    wertL an");
+   Wait(1500);
+   ClearScreen();
+   TextOut(0,LCD_LINE4,"  Will Schwell-");
+   TextOut(0,LCD_LINE5,"  wertR anpassen");
+   Wait(2500);
+   ClearScreen();
+   until(ButtonPressed(BTNCENTER, 1))
+   {
+   SchwelleR = Sensor(IN_4) + 2
+   }
+   TextOut(0,LCD_LINE4,"  Passe Schwell-");
+   TextOut(0,LCD_LINE5,"   wertR an");
+   Wait(1500);
+   ClearScreen();
+   TextOut(0,LCD_LINE4,"   Noch einmal");
+   TextOut(0,LCD_LINE5,"  druecken zum");
+   TextOut(0,LCD_LINE6,"  druecken zum");
+   Wait(1500);
+   ClearScreen();
+   until (ButtonPressed(BTNCENTER, 1))
+   {}
+   }
+
+
+   task main()
+{
+ SetSensorLight(IN_4);
+ SetSensorLight(IN_2);
+    Button();
+    while(true)
+    {
+
+    while (SENSOR_2 < SchwelleL )
+    {
+     TextOut(0,LCD_LINE1,"Links");
+     OnFwd(OUT_C, 90);
+     OnRev(OUT_B, 90);
+     Wait(50);
+     ClearScreen();
+    }
+    {
+     OnFwd(OUT_BC, 50);
+    }
+    while(SENSOR_4 < SchwelleR )
+    {
+     TextOut(0,LCD_LINE1,"Rechts");
+     OnFwd(OUT_B, 90);
+     OnRev(OUT_C, 90);
+     Wait(50);
+     ClearScreen();
+    }
+    {
+    OnFwd(OUT_BC, 50);
+    }
+   }
+  }
+ }

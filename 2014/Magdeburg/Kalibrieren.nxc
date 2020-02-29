@@ -1,0 +1,124 @@
+//Lichtschwellen
+int SchwelleL = 20 ;
+int SchwelleR = 90 ;
+
+//Farbsensorschwellen
+int farbwerte[] ;
+int rotMin = 555 ;
+int rotMax = 555 ;
+int gruenMin = 555 ;
+int gruenMax = 555 ;
+int blauMin = 555 ;
+int blauMax = 555 ;
+
+
+void Farbwerte()
+{
+TextOut(0,LCD_LINE4,"Will Farb-");
+TextOut(0,LCD_LINE5,"werte anpassen");
+until (ButtonPressed(BTNCENTER, 1))
+ {
+  rotMin = Sensor(IN_1) - 30
+  rotMax = Sensor(IN_1) + 30
+  gruenMin = Sensor(IN_1) - 30
+  gruenMax = Sensor(IN_1) + 30
+  blauMin = Sensor(IN_1) - 30
+  blauMax = Sensor(IN_1) + 30
+ }
+ TextOut(0,LCD_LINE4,"  Passe Farb-");
+ TextOut(0,LCD_LINE5,"   werte an");
+ Wait(1000);
+ ClearScreen();
+ TextOut(0,LCD_LINE4,"    Nochmal");
+ TextOut(0,LCD_LINE5,"   druecken");
+ until(ButtonPressed(BTNCENTER, 1))
+ {}
+}
+
+void Lichtwerte()
+{
+   TextOut(0,LCD_LINE4,"  Will Schwell-");
+   TextOut(0,LCD_LINE5,"  wertL anpassen");
+   Wait(1500);
+   ClearScreen();
+   until (ButtonPressed(BTNCENTER, 1))
+   {
+    SchwelleL = Sensor(IN_2) + 2
+   }
+   TextOut(0,LCD_LINE4,"  Passe Schwell-");
+   TextOut(0,LCD_LINE5,"    wertL an");
+   Wait(1500);
+   ClearScreen();
+   until(ButtonPressed(BTNCENTER, 1))
+   {
+   SchwelleR = Sensor(IN_4) + 2
+   }
+   TextOut(0,LCD_LINE4,"Passe Schwell-");
+   TextOut(0,LCD_LINE5,"   wertR an");
+   Wait(1500);
+   ClearScreen();
+   TextOut(0,LCD_LINE4,"   Nach druck");
+   TextOut(0,LCD_LINE5,"      START!");
+   Wait(1500);
+   ClearScreen();
+   until (ButtonPressed(BTNCENTER, 1))
+   {}
+   }
+
+
+   task main()
+{
+ SetSensorLight(IN_4);
+ SetSensorLight(IN_2);
+ SetSensorColorFull(IN_1);
+    Farbwerte();
+    Lichtwerte();
+    while(true)
+    {
+
+    while (SENSOR_2 < SchwelleL )
+    {
+     TextOut(0,LCD_LINE1,"Links");
+     OnFwd(OUT_C, 90);
+     OnRev(OUT_B, 90);
+     Wait(200);
+     ClearScreen();
+    }
+    {
+     OnFwd(OUT_BC, 50);
+    }
+    while(SENSOR_4 < SchwelleR )
+    {
+     TextOut(0,LCD_LINE1,"Rechts");
+     OnFwd(OUT_B, 90);
+     OnRev(OUT_C, 90);
+     Wait(50);
+     ClearScreen();
+    }
+    {
+    OnFwd(OUT_BC, 50);
+    }
+       ReadSensorColorRaw(IN_1, farbwerte);
+   int rotWert = farbwerte[0];
+   int gruenWert = farbwerte[1];
+   int blauWert = farbwerte[2];
+   TextOut(5,60, "Rot: ");
+   NumOut(5,60, rotWert);
+   TextOut(5,40, "Grün: ");
+   NumOut(5,40, gruenWert);
+   TextOut(5,20, "Blau: ");
+   NumOut(5,20, blauWert);
+   Wait(100);
+   ClearScreen();
+  if(rotWert > rotMin && rotWert < rotMax &&
+     gruenWert > gruenMin && gruenWert < gruenMax &&
+     blauWert > blauMin && blauWert < blauMax)
+  {
+   OnFwd(OUT_BC, 100);
+   Wait(5000);
+   OnRev(OUT_BC,100);
+   Wait(5000);
+   }
+   }
+  }
+ }

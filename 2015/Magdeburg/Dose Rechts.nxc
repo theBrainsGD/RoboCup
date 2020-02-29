@@ -1,0 +1,171 @@
+                            #include "HTSMUX-driver.h"
+                            
+/*
+  Lichtsensor Links auﬂen = Multiplexer Sensor 4
+  Lichtsensor Links innen = Multiplexer Sensor 3
+  Lichtsensor Rechts innen = Multiplexer Sensor 2
+  Lichtsensor Rechts auﬂen = Multiplexer Sensor 1
+*/
+
+#define M             OUT_BC
+#define MR            OUT_B                                                     //Motoren
+#define ML            OUT_C
+
+#define LRA           msensor_S3_4                                              //Multiplexersensoren
+#define LRI           msensor_S3_3
+#define LLI           msensor_S3_2
+#define LLA           msensor_S3_1
+
+
+#define TS            IN_2
+#define MP            IN_3                                                      //NXT-Sensoren
+
+
+#define Speed         60
+#define Kurve         50
+#define VLSchnell     70
+#define VLStandard    50                                                        //andere Konastanten
+#define VRSchnell     70
+#define VRStandard    50
+#define Kreuzung      60
+#define Standard      70
+
+#define SchwelleLA 40
+#define SchwelleLI 40
+#define SchwelleRA 40
+#define SchwelleRI 40
+
+
+
+#define MS = smuxSensorLegoLightNorm
+
+task main ()      {
+ SetSensorTouch(IN_2);
+ SetSensor(MP, SENSOR_LOWSPEED);                                                 //Multiplexer ansteuern anfang
+
+ if(HTSMUXscanPorts(MP) <> true){
+  TextOut(0, LCD_LINE5, "Fehler: Multiplexer");
+  Wait(1000);
+  ClearScreen();
+  Off(M);
+  Wait(100000);
+ }
+
+ smuxSetSensorLegoLight(msensor_S3_1, true);
+ smuxSetSensorLegoLight(msensor_S3_2, true);
+ smuxSetSensorLegoLight(msensor_S3_3, true);
+ smuxSetSensorLegoLight(msensor_S3_4, true);
+
+
+ while(true){
+ 
+ if(smuxSensorLegoLightNorm(msensor_S3_1) < SchwelleLA){
+ OnFwd(OUT_C, 65);
+ OnRev(OUT_B,65);
+ Wait(200);
+
+ }
+ else{
+  OnFwd(OUT_BC, Standard);
+  ClearScreen();
+ }
+
+
+
+   if(smuxSensorLegoLightNorm(msensor_S3_4) < SchwelleRA){
+    OnFwd(OUT_B, 65);
+    OnRev(OUT_C,65);
+    Wait(200);
+   }
+   else{
+    OnFwd(OUT_BC,Standard);
+    ClearScreen();
+   }
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ if(smuxSensorLegoLightNorm(msensor_S3_2) < SchwelleRI){
+  OnFwd(OUT_C, 70);
+  OnRev(OUT_B,70);
+  Wait(150);
+  }
+  else{
+   OnFwd(OUT_BC,Standard);
+   ClearScreen();
+  }
+   
+
+if(smuxSensorLegoLightNorm(msensor_S3_3) < SchwelleLI){
+ OnFwd(OUT_B, 50);
+ OnRev(OUT_C,50);
+ Wait(150);
+ }
+ else{
+  OnFwd(OUT_BC, Standard);
+  ClearScreen();
+ }
+
+
+
+   
+   if(smuxSensorLegoLightNorm(msensor_S3_1) < SchwelleLA && smuxSensorLegoLightNorm(msensor_S3_3) < SchwelleRI){
+    ClearScreen();
+    TextOut(0,LCD_LINE1,"Kreuzung aussen");
+    RotateMotor(M, Kreuzung, 150);
+    OnFwd(ML, 50);
+    OnRev(MR,50);
+    Wait(2000);
+    RotateMotor(M,50, 50);
+    until(smuxSensorLegoLightNorm(msensor_S3_1) < SchwelleRA || smuxSensorLegoLightNorm(msensor_S3_2) < SchwelleRI){
+     OnFwd(MR,Kurve);
+     OnRev(ML,Kurve);
+     ClearScreen();
+    }
+   }
+
+if(smuxSensorLegoLightNorm(msensor_S3_2) < SchwelleLI && smuxSensorLegoLightNorm(msensor_S3_4) < SchwelleRA){
+ ClearScreen();
+ TextOut(0,LCD_LINE1,"Kreuzung innen");
+ RotateMotor(M, Kreuzung, 150);
+ OnFwd(ML, 50);
+ OnRev(MR,50);
+ Wait(2000);
+ RotateMotor(M,50, 50);
+ until(smuxSensorLegoLightNorm(msensor_S3_1) < SchwelleRA || smuxSensorLegoLightNorm(msensor_S3_2) < SchwelleRI){
+  OnFwd(MR,Kurve);
+  OnRev(ML,Kurve);
+  ClearScreen();
+  }
+ }
+ 
+ 
+  if(Sensor(TS) == 1){
+   ClearScreen();
+   TextOut(0,LCD_LINE3,"Dose");
+   RotateMotor(M,50, -270);
+   RotateMotor(MR,50,-430);
+   RotateMotor(ML,50,430);
+   RotateMotor(M,50,750);
+   RotateMotor(MR,50,450);
+   RotateMotor(ML,50,-450);
+   RotateMotor(M,50,750);
+   RotateMotor(MR,50,180);
+   RotateMotor(ML,50,-180);
+   until((smuxSensorLegoLightNorm(msensor_S3_1) < SchwelleRA) || (smuxSensorLegoLightNorm(msensor_S3_2) < SchwelleRI)){
+    OnFwd(OUT_BC,Speed);
+   }
+   ClearScreen();
+  }
+  else{
+   OnFwd(OUT_BC,Standard);
+   ClearScreen();
+  }
+   
+ }
+}
+

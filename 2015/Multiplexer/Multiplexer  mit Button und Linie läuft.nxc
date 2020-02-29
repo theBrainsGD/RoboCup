@@ -1,0 +1,424 @@
+#include "HTSMUX-driver.h"
+
+/*
+  Lichtsensor Links außen = Multiplexer Sensor 4
+  Lichtsensor Links innen = Multiplexer Sensor 3
+  Lichtsensor Rechts innen = Multiplexer Sensor 2
+  Lichtsensor Rechts außen = Multiplexer Sensor 1
+*/
+
+int SchwelleLA   =     47 ;
+int SchwelleLA1  =     0  ;
+int SchwelleLA2  =     0  ;
+
+int SchwelleLI  =     45 ;
+int SchwelleLI1 =     0  ;
+int SchwelleLI2 =     0  ;
+
+int SchwelleRI   =     47 ;
+int SchwelleRI1  =     99 ;
+int SchwelleRI2  =     0  ;
+
+int SchwelleRA  =     45 ;
+int SchwelleRA1 =     99 ;
+int SchwelleRA2 =     0  ;
+
+#define M             OUT_BC
+#define MR            OUT_B                                                     //Motoren
+#define ML            OUT_C
+
+#define LRA           msensor_S3_4                                              //Multiplexersensoren
+#define LRI           msensor_S3_3
+#define LLI           msensor_S3_2
+#define LLA           msensor_S3_1
+
+
+#define TS            IN_2
+#define MP            IN_3                                                      //NXT-Sensoren
+
+
+#define Speed         70
+#define VLSchnell     80
+#define VLStandard    70                                                        //andere Konastanten
+#define VRSchnell     80
+#define VRStandard    70
+
+#define MS = smuxSensorLegoLightNorm
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+void Button1()
+{
+
+ until(ButtonPressed(BTNCENTER, 1))
+ {
+  TextOut(0,LCD_LINE4,"  Will Schwell-");
+  TextOut(0,LCD_LINE5,"  wertLA1 anpassen");
+  SchwelleLA1 = smuxSensorLegoLightNorm(msensor_S3_1) + 2;
+ }
+
+ ClearScreen();
+ TextOut(0,LCD_LINE4,"  Passe Schwell-");
+ TextOut(0,LCD_LINE5,"    wertLA1 an");
+ Wait(1000);
+ ClearScreen();
+
+
+ until(ButtonPressed(BTNCENTER, 1))
+ {
+  TextOut(0,LCD_LINE4,"  Will Schwell-");
+  TextOut(0,LCD_LINE5,"  wertR1 anpassen");
+  SchwelleRA1 = smuxSensorLegoLightNorm(msensor_S3_4) + 2 ;
+ }
+
+ ClearScreen();
+ TextOut(0,LCD_LINE4,"  Passe Schwell-");
+ TextOut(0,LCD_LINE5,"    wertRA1 an");
+ Wait(1000);
+ ClearScreen();
+
+
+ until(ButtonPressed(BTNCENTER, 1))
+ {
+  TextOut(0,LCD_LINE4,"  Will Schwell-");
+  TextOut(0,LCD_LINE5,"  wertLA anpassen");
+  SchwelleLA2 = smuxSensorLegoLightNorm(msensor_S3_1) + 2 + SchwelleLA1  ;
+ }
+
+ ClearScreen();
+  SchwelleLA = SchwelleLA2 / 2;
+ TextOut(0,LCD_LINE4,"  Passe Schwell-");
+ TextOut(0,LCD_LINE5,"    wertLA an");
+ Wait(1000);
+ ClearScreen();
+
+
+ until(ButtonPressed(BTNCENTER, 1))
+ {
+  TextOut(0,LCD_LINE4,"  Will Schwell-");
+  TextOut(0,LCD_LINE5,"  wertR2 anpassen");
+  SchwelleRA2 = smuxSensorLegoLightNorm(msensor_S3_4) + 2 + SchwelleRA1 ;
+ }
+
+ ClearScreen();
+  SchwelleRA = SchwelleRA2 / 2;
+ TextOut(0,LCD_LINE4,"  Passe Schwell-");
+ TextOut(0,LCD_LINE5,"    wertR2 an");
+ Wait(1000);
+ ClearScreen();
+
+
+ until(ButtonPressed(BTNCENTER, 1))
+ {
+ TextOut(0,LCD_LINE4,"   Noch einmal");
+ TextOut(0,LCD_LINE5,"   drücken zum");
+ TextOut(0,LCD_LINE6,"   vortsetzten");
+ TextOut(0,LCD_LINE7,"   des kalibrirens ");
+ }
+ ClearScreen();
+ Wait(500);
+
+}
+
+
+
+
+
+
+
+
+
+
+/*
+void ButtonSMUXSensoren()
+{
+
+ until(ButtonPressed(BTNCENTER, 1))
+ {
+  TextOut(0,LCD_LINE4,"  Will Schwell-");
+  TextOut(0,LCD_LINE5,"  wertLL1 anpassen");
+  SchwelleLL1 = Sensor(LSL1) + 2;
+ }
+
+ ClearScreen();
+ TextOut(0,LCD_LINE4,"  Passe Schwell-");
+ TextOut(0,LCD_LINE5,"    wertLL1 an");
+ Wait(1000);
+ ClearScreen();
+
+
+ until(ButtonPressed(BTNCENTER, 1))
+ {
+  TextOut(0,LCD_LINE4,"  Will Schwell-");
+  TextOut(0,LCD_LINE5,"  wertRR1 anpassen");
+  SchwelleRR1 = Sensor(LSR1) + 2;
+ }
+
+ ClearScreen();
+ TextOut(0,LCD_LINE4,"  Passe Schwell-");
+ TextOut(0,LCD_LINE5,"    wertRR1 an");
+ Wait(1000);
+ ClearScreen();
+
+
+ until(ButtonPressed(BTNCENTER, 1))
+ {
+  TextOut(0,LCD_LINE4,"  Will Schwell-");
+  TextOut(0,LCD_LINE5,"  wertLL2 anpassen");
+  SchwelleLL = Sensor(LSL1) + 2 + SchwelleLL1 / 2;
+ }
+
+ ClearScreen();
+ TextOut(0,LCD_LINE4,"  Passe Schwell-");
+ TextOut(0,LCD_LINE5,"    wertLL2 an");
+ Wait(1000);
+ ClearScreen();
+
+
+ until(ButtonPressed(BTNCENTER, 1))
+ {
+  TextOut(0,LCD_LINE4,"  Will Schwell-");
+  TextOut(0,LCD_LINE5,"  wertRR2 anpassen");
+  SchwelleRR = Sensor(LSR1) + 2 + SchwelleRR1 / 2;
+ }
+
+ ClearScreen();
+ TextOut(0,LCD_LINE4,"  Passe Schwell-");
+ TextOut(0,LCD_LINE5,"    wertRR2 an");
+ Wait(1000);
+ ClearScreen();
+
+
+ until(ButtonPressed(BTNCENTER, 1))
+ {
+ TextOut(0,LCD_LINE4,"   Noch einmal");
+ TextOut(0,LCD_LINE5,"   drücken um");
+ TextOut(0,LCD_LINE6,"   zu starten");
+ }
+
+}      */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+task main()
+{                                                                               // task main() anfang
+
+ 
+SetSensor(MP, SENSOR_LOWSPEED);
+ if(HTSMUXscanPorts(MP) <> true)
+ {
+  TextOut(0, LCD_LINE5, "Fehler: Multiplexer");
+  Wait(1000);
+  ClearScreen();
+ }
+ 
+ smuxSetSensorLegoLight(msensor_S3_1, true);
+ smuxSetSensorLegoLight(msensor_S3_2, true);
+ smuxSetSensorLegoLight(msensor_S3_3, true);
+ smuxSetSensorLegoLight(msensor_S3_4, true);
+ SetSensorTouch(TS);
+ 
+ Button1();
+
+ 
+ while(true)
+ {                                                                              //while(true) anfang
+  if(smuxSensorLegoLightNorm(msensor_S3_4) < SchwelleLA)
+  {
+   OnFwd(OUT_B, 60);
+   OnRev(OUT_C, 60);
+   Wait(200);
+  }
+  
+ else
+ OnFwd(OUT_BC,50);
+ 
+ if(smuxSensorLegoLightNorm(msensor_S3_1) < SchwelleRA)
+  {
+   OnFwd(OUT_C, 60);
+   OnRev(OUT_B, 60);
+   Wait(200);
+  }
+  else
+  OnFwd(OUT_BC,50);
+
+
+
+                                                                               //Linie ohne Multiplexer anfang
+ 
+  /* int L = smuxSensorLegoLightNorm(LLA), R = smuxSensorLegoLightNorm(LRA);
+
+  while ((L < SchwelleLA) || (R < SchwelleRA))
+  {
+    if ((L < SchwelleLA) && (R < SchwelleRA))
+      OnRev(M, VLSchnell);
+
+    else
+    {
+      if (L < SchwelleLA)
+      {
+        OnRev(ML, VLSchnell);
+        OnFwd(MR, VRStandard);
+      }
+      else
+      {
+        OnRev(MR, VRSchnell);
+        OnFwd(ML, VLStandard);
+
+      }
+    }
+
+    L = smuxSensorLegoLightNorm(LLA); R = smuxSensorLegoLightNorm(LRA);
+  }
+
+  OnFwd(M, VLStandard);                                                         //Linie mit Multiplexer ende
+
+
+
+
+
+
+ /*                                                                              //Linie mit Multiplexer anfang 1
+     int L1 = Sensor(LSL1), R1 = Sensor(LSR1);
+
+  while ((L1 < SchwelleLL) || (R1 < SchwelleRR))
+  {
+    if ((L1 < SchwelleLL) && (R1 < SchwelleRR))
+      OnRev(M, VLSchnell);
+
+    else
+    {
+      if (L1 < SchwelleLL)
+      {
+        OnRev(ML, VLSchnell);
+        OnFwd(MR, VRStandard);
+      }
+      else
+      {
+        OnRev(MR, VRSchnell);
+        OnFwd(ML, VLStandard);
+      }
+    }
+
+    L1 = Sensor(LSL1); R1 = Sensor(LSR1);
+  }
+
+  OnFwd(M, VLStandard);                                                         //Linie mit Multiplexer ende 1
+  
+  
+  
+  /*if(Sensor(TS) == 1)                                                         // Drucksensor wird angesteuert
+  {
+   TextOut(1, LCD_LINE5, "Ich wurde gedrückt ;)");
+   Wait(1000);
+   OnRev(M, Speed);
+   Wait(500);
+   
+  }     */
+  
+  
+ }                                                                              // while(true)  Ende
+}                                                                               // task main() Ende
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

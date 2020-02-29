@@ -1,0 +1,29 @@
+          bool Pacours = true ;
+          bool Rescue = false;
+
+          task main(){
+           SetSensorTouch(IN_2);
+           
+           while(Pacours){
+            TextOut(0,LCD_LINE5,"main");
+            
+            if(Sensor(IN_2)== 1)
+            {
+             Pacours = false;
+             Rescue = true;
+             ClearScreen();
+            }
+           }
+           
+
+           while(true){
+           TextOut(0,LCD_LINE5,"Rescue");
+
+           if(Sensor(IN_2) == 1){
+           RotateMotor(OUT_BC,50,360);
+           }
+           }
+
+
+
+          }

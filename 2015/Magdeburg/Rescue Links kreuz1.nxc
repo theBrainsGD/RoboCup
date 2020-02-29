@@ -1,0 +1,287 @@
+#include "HTSMUX-driver.h"
+
+
+/*
+  Lichtsensor Links auﬂen =  Sensor 1
+  Lichtsensor Links innen = Multiplexer Sensor 3
+  Lichtsensor Rechts innen = Multiplexer Sensor 2
+  Lichtsensor Rechts auﬂen =  Sensor 4
+*/
+
+
+#define M             OUT_BC
+#define MR            OUT_B                                                     //Motoren
+#define ML            OUT_C
+
+#define LRA           msensor_S3_4                                              //Multiplexersensoren
+#define LRI           msensor_S3_3
+#define LLI           msensor_S3_2
+#define LLA           msensor_S3_1
+
+
+#define TS            IN_2
+#define MP            IN_3                                                      //NXT-Sensoren
+
+
+#define Speed         60
+#define Kurve         50
+#define VLSchnell     70
+#define VLStandard    50                                                        //andere Konastanten
+#define VRSchnell     70
+#define VRStandard    50
+#define Kreuzung      60
+#define Standard      70
+
+#define SchwelleLA 45
+#define SchwelleLI 45
+#define SchwelleRA 45
+#define SchwelleRI 45
+
+
+
+#define MS  smuxSensorLegoLightNorm
+
+
+bool Pacours = true ;
+bool Rescue = false ;
+
+int Silber = 80;
+
+int LinksI = 0;
+int LinksA = 0;
+
+int rescue = 0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+task main (){                                                                   // task main Anfang
+
+ SetSensorTouch(IN_2);                                                          //Drucksensor
+ SetSensorLight(IN_4);                                                          //LichtSensorrechtsauﬂen
+ SetSensorLight(IN_1);                                                          //LichtSensorlinksauﬂen
+
+ SetSensor(MP, SENSOR_LOWSPEED);                                                //Multiplexer ansteuern anfang
+
+ if(HTSMUXscanPorts(MP) <> true){
+  TextOut(0, LCD_LINE5, "Fehler: Multiplexer");
+  Off(M);
+  Wait(100000);
+  ClearScreen();
+ }
+
+ smuxSetSensorLegoLight(msensor_S3_2, true);                                    //rechts innen
+ smuxSetSensorLegoLight(msensor_S3_3, true);                                    //links innen
+ smuxSetSensorLegoLight(msensor_S3_4, true);                                    //Oben
+
+
+ while(Pacours){                                                                //while pacours anfang
+ 
+   if(Sensor(IN_1) < SchwelleLA && smuxSensorLegoLightNorm(msensor_S3_2) < SchwelleRI){
+   ClearScreen();
+   TextOut(0,LCD_LINE1,"Kreuzung RI LA");
+   RotateMotor(M, Kreuzung, 150);
+   OnFwd(MR, 50);
+   OnRev(ML,50);
+   Wait(2500);
+   RotateMotor(M,50, 50);
+   LinksA = LinksA + 1;
+   until(Sensor(IN_1) < SchwelleLA || smuxSensorLegoLightNorm(msensor_S3_3) < SchwelleLI){
+    OnFwd(ML,Kurve);
+    OnRev(MR,Kurve);
+    ClearScreen();
+   }
+  }
+
+  if((smuxSensorLegoLightNorm(msensor_S3_3) < SchwelleLI) && (Sensor(IN_4) < SchwelleRA)){
+   ClearScreen();
+   TextOut(0,LCD_LINE1,"Kreuzung LI RA");
+   RotateMotor(M, Kreuzung, 150);
+   OnFwd(MR, 50);
+   OnRev(ML,50);
+   Wait(2500);
+   RotateMotor(M,50, 50);
+   LinksI = LinksI + 1;
+   until(Sensor(IN_1) < SchwelleLA || smuxSensorLegoLightNorm(msensor_S3_3) < SchwelleLI){
+    OnFwd(ML,Kurve);
+    OnRev(MR,Kurve);
+    ClearScreen();
+   }
+  }
+  
+  
+  
+  
+  
+
+
+
+
+  if(Sensor(IN_4) < SchwelleLA){
+   OnFwd(ML, 65);
+   OnRev(MR,65);
+   Wait(200);
+  }
+  else{
+   OnFwdReg(M, Standard, OUT_REGMODE_SYNC);
+   ClearScreen();
+  }
+
+
+
+  if(Sensor(IN_1) < SchwelleRA){
+   OnFwd(MR, 65);
+   OnRev(ML,65);
+   Wait(200);
+  }
+  else{
+   OnFwdReg(M, Standard, OUT_REGMODE_SYNC);
+   ClearScreen();
+  }
+
+
+
+
+
+
+  if(smuxSensorLegoLightNorm(msensor_S3_2) < SchwelleRI){
+   OnFwd(ML, 70);
+   OnRev(MR,70);
+   Wait(150);
+  }
+  else{
+   OnFwdReg(M, Standard, OUT_REGMODE_SYNC);
+   ClearScreen();
+  }
+
+
+  if(smuxSensorLegoLightNorm(msensor_S3_3) < SchwelleLI){
+   OnFwd(MR, 50);
+   OnRev(ML,50);
+   Wait(150);
+  }
+  else{
+   OnFwdReg(M, Standard, OUT_REGMODE_SYNC);
+   ClearScreen();
+  }
+
+
+
+
+
+
+
+
+  if(Sensor(TS) == 1){
+   ClearScreen();
+   TextOut(0,LCD_LINE3,"Dose");
+   RotateMotor(M,70, -270);
+   RotateMotor(MR,70,430);
+   RotateMotor(ML,70,-430);
+   RotateMotor(M,70,750);
+   RotateMotor(MR,70,-450);
+   RotateMotor(ML,70,450);
+   RotateMotor(M,70,750);
+   RotateMotor(MR,70,-280);
+   RotateMotor(ML,70,280);
+   until((Sensor(IN_1) < SchwelleLA) || (smuxSensorLegoLightNorm(msensor_S3_3) < SchwelleLI)){
+   OnFwdReg(M, Standard, OUT_REGMODE_SYNC);
+   }
+   ClearScreen();
+  }
+  else{
+   OnFwdReg(M, Standard, OUT_REGMODE_SYNC);
+   ClearScreen();
+  }
+
+  /*if(((Sensor(IN_1) >= 58)  && (Sensor(IN_1) <= 62)) &&
+     ((smuxSensorLegoLightNorm(msensor_S3_2) <= 62)  && (smuxSensorLegoLightNorm(msensor_S3_2) >= 58))){
+  Rescue = true;
+  Pacours = false;
+  }       */
+  
+                                                                                 //60 55 60 70
+  if(ButtonPressed(BTNCENTER, 0)){
+  ClearScreen();
+  TextOut(0,LCD_LINE4, "LinksI");
+  NumOut(50, LCD_LINE5, LinksI);
+  TextOut(0,LCD_LINE6, "LinksA");
+  NumOut(50, LCD_LINE7, LinksA);
+  Off(M);
+  Wait(10000);
+  ClearScreen();
+ }
+
+
+  }                                                                             //while pacours anfang
+
+
+
+
+
+  while(Rescue){                                                                //while Rescue anfang
+
+    while(Sensor(IN_4) < Silber){
+    until((Sensor(TS) == 1) && (rescue < 3)){
+     OnFwdReg(M, 50, OUT_REGMODE_SYNC);
+      ClearScreen();
+      NumOut(50,LCD_LINE5, rescue);
+    }
+     RotateMotor(MR,50, -300);
+     RotateMotor(ML, 50, 300);
+     rescue = rescue + 1;
+     
+     }
+     if((Sensor(TS) == 1) && (rescue <= 8) && (rescue >= 3) ){
+    ClearScreen();
+       TextOut(0,LCD_LINE5,"Hallo XD");
+    Off(M);
+
+    Wait(10000);
+     }
+     else{
+     OnFwdReg(M, 50, OUT_REGMODE_SYNC);
+     
+
+     }
+
+     
+  }                                                                             //while Rescue Ende
+
+
+
+}                                                                               // task main() Ende
+
+
+
+
+/* rest
+
+
+     /*&&(smuxSensorLegoLightNorm(msensor_S3_3) < 55) && (smuxSensorLegoLightNorm(msensor_S3_4) < 55)
+
+  while(smuxSensorLegoLightNorm(msensor_S3_1) > 55){
+
+  }
+
+  }
+  if(ButtonPressed(BTNCENTER, 0)){
+  ClearScreen();
+  TextOut(0,LCD_LINE4, "LinksI");
+  NumOut(50, LCD_LINE5, LinksI);
+  TextOut(0,LCD_LINE6, "LinksA");
+  NumOut(50, LCD_LINE7, LinksA);
+  Off(M);
+  Wait(10000);
+  ClearScreen();
+
+

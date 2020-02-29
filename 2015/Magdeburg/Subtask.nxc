@@ -1,0 +1,42 @@
+
+
+
+
+
+
+sub Rescue(){
+ //SetSensorTouch(IN_2);
+while(true){
+TextOut(0,LCD_LINE5, "Sub");
+if(Sensor(IN_1) == 1){
+ClearScreen();
+Wait(500);
+}
+else
+OnFwd(OUT_BC,50);
+}
+}
+
+
+
+
+
+
+task main(){
+ SetSensorTouch(IN_2);
+ 
+ while(true){
+ TextOut(0,LCD_LINE5,"main");
+  if(Sensor(IN_2) == 1)
+  {
+  ClearScreen();
+  Rescue();
+  }
+ }
+
+}
+
+
+
+
+

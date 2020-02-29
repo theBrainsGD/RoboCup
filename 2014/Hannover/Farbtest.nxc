@@ -1,0 +1,35 @@
+#define
+
+
+ task main()
+ {
+ SetSensorColorFull(IN_2);
+ int farbwerte[];
+ int rotMin = 360;
+ int rotMax = 380;
+ int gruenMin = 370;
+ int gruenMax = 390;
+ int blauMin = 310;
+ int blauMax = 330;
+ 
+
+ while(true)
+  {
+  ReadSensorColorRaw(, farbwerte);
+  int rotWert = farbwerte[0];
+  int gruenWert = farbwerte[1];
+  int blauWert = farbwerte[2];
+  TextOut(5,60, "Rot: ");
+  NumOut(50,60, rotWert);
+  TextOut(5,40, "Grün: ");
+  NumOut(50,40, gruenWert);
+  TextOut(5,20, "Blau: ");
+  NumOut(50,20, blauWert);
+  Wait(100);
+  ClearScreen();
+  if(rotWert > rotMin && rotWert < rotMax && gruenWert > gruenMin && gruenWert < gruenMax && blauWert > blauMin && blauWert < blauMax)
+  {
+   PlaySound(SOUND_LOW_BEEP);
+  }
+ }
+}

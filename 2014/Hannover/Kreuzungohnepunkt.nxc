@@ -1,0 +1,115 @@
+#include "HTSMUX-driver.h"
+#define lichtwertausen 50
+#define lichtwertinnen 40
+task main()
+{
+
+
+  SetSensorLowspeed(S1);
+  SetSensorTouch(S3);
+  SetSensorTouch(S4);
+  SetSensorColorFull(S2);
+
+   if (!HTSMUXscanPorts(S1))
+  {
+    Off(OUT_AC);
+    TextOut(0, LCD_LINE1, "Multiplexer Fehler!");
+    Wait(500000);
+  }
+
+  smuxSetSensorLegoLight(msensor_S1_1, true);
+  smuxSetSensorLegoLight(msensor_S1_2, true);
+  smuxSetSensorLegoLight(msensor_S1_3, true);
+  smuxSetSensorLegoLight(msensor_S1_4, true);
+  
+  while (true)
+  {
+    while(Sensor(IN_3)==0 && Sensor(IN_4)==0)
+    {
+     /*if((smuxSensorLegoLightNorm(msensor_S1_1) < lichtwertausen) && (smuxSensorLegoLightNorm(msensor_S1_4) < lichtwertausen))
+     {
+      RotateMotor(OUT_C, 100,  380);
+      RotateMotor(OUT_A, 100, -380);
+     }
+     if((smuxSensorLegoLightNorm(msensor_S1_1) < lichtwertausen) && (smuxSensorLegoLightNorm(msensor_S1_2) < lichtwertinnen))
+     {
+      RotateMotor(OUT_A, 100,  380);
+      RotateMotor(OUT_C, 100, -380);
+     }*/
+     if((smuxSensorLegoLightNorm(msensor_S1_1) < lichtwertausen) && (smuxSensorLegoLightNorm(msensor_S1_2) < lichtwertinnen))
+     {
+      RotateMotor(OUT_AC, 50, -90);
+      while(smuxSensorLegoLightNorm(msensor_S1_4) < lichtwertausen)
+      {
+        OnFwdSync(OUT_AC, 50, 100);
+        //OnFwd(OUT_A, 50);
+        //OnFwd(OUT_C, 0);
+      }
+      //RotateMotor(OUT_A, 50,  90);
+      //RotateMotor(OUT_A, 50, -90);
+      /*while(smuxSensorLegoLightNorm(msensor_S1_2) < lichtwertinnen)
+      {
+        OnFwd(OUT_C, 50);
+        OnFwd(OUT_A, 0);
+      }
+      while(smuxSensorLegoLightNorm(msensor_S1_3) < lichtwertinnen)
+      {
+        OnFwd(OUT_C, 50);
+        OnFwd(OUT_A, 0);
+      }*/
+     }
+     if(smuxSensorLegoLightNorm(msensor_S1_1) <lichtwertausen)
+      {
+       while(smuxSensorLegoLightNorm(msensor_S1_3) > lichtwertinnen)
+       {
+        RotateMotor(OUT_AC,100,30);
+        OnFwd(OUT_C,50);
+        OnRev(OUT_A,50);
+       }
+      }
+
+    if(smuxSensorLegoLightNorm(msensor_S1_4) < lichtwertausen)
+    {
+      while(smuxSensorLegoLightNorm(msensor_S1_2) > lichtwertinnen)
+      {
+        RotateMotor(OUT_AC,100,30);
+        OnFwd(OUT_A,50);
+        OnRev(OUT_C,50);
+      }
+    }
+
+    if(smuxSensorLegoLightNorm(msensor_S1_2) < lichtwertinnen)
+    {
+      while(smuxSensorLegoLightNorm(msensor_S1_2) < lichtwertinnen)
+      {
+        OnRev(OUT_A,50);
+      }
+    }
+     else
+    {
+      OnFwd(OUT_A,70);
+    }
+    if(smuxSensorLegoLightNorm(msensor_S1_3) < lichtwertinnen)
+    {
+      while(smuxSensorLegoLightNorm(msensor_S1_3) < lichtwertinnen)
+      {
+        OnRev(OUT_C,50);
+      }
+     }
+     else
+     {
+       OnFwd(OUT_C,70);
+     }
+    }
+    RotateMotor(OUT_AC, -100, 200);
+    RotateMotor(OUT_C, -100, 200);
+    RotateMotor(OUT_A, 100, 300);
+    RotateMotor(OUT_AC, 100, 300);
+
+    while (smuxSensorLegoLightNorm(msensor_S1_3) > lichtwertinnen)
+    {
+      OnFwd(OUT_A,20);
+      OnFwd(OUT_C,80);
+    }
+  }
+}

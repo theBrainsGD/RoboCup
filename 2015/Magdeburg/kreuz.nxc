@@ -1,0 +1,136 @@
+#include "HTSMUX-driver.h"
+
+
+/*
+  Lichtsensor Links auﬂen =  Sensor 1
+  Lichtsensor Links innen = Multiplexer Sensor 3
+  Lichtsensor Rechts innen = Multiplexer Sensor 2
+  Lichtsensor Rechts auﬂen =  Sensor 4
+*/
+
+
+#define M             OUT_BC
+#define MR            OUT_B                                                     //Motoren
+#define ML            OUT_C
+
+#define LRA           msensor_S3_4                                              //Multiplexersensoren
+#define LRI           msensor_S3_3
+#define LLI           msensor_S3_2
+#define LLA           msensor_S3_1
+
+
+#define TS            IN_2
+#define MP            IN_3                                                      //NXT-Sensoren
+
+
+#define Speed         60
+#define Kurve         50
+#define KurveL        60
+#define VLSchnell     70
+#define VLStandard    50                                                        //andere Konastanten
+#define VRSchnell     70
+#define VRStandard    50
+#define Kreuzung      60
+#define Standard      70
+
+#define SchwelleLA 45
+#define SchwelleLI 45
+#define SchwelleRA 45
+#define SchwelleRI 45
+
+
+
+#define MS  smuxSensorLegoLightNorm
+
+
+bool Pacours = true ;
+bool Rescue = false ;
+
+int Silber = 80;
+
+int LinksI = 0;
+int LinksA = 0;
+
+int rescue = 0;
+
+task main (){                                                                   // task main Anfang
+
+ SetSensorTouch(IN_2);                                                          //Drucksensor
+ SetSensorLight(IN_4);                                                          //LichtSensorrechtsauﬂen
+ SetSensorLight(IN_1);                                                          //LichtSensorlinksauﬂen
+
+ SetSensor(MP, SENSOR_LOWSPEED);                                                 //Multiplexer ansteuern anfang
+
+ if(HTSMUXscanPorts(MP) <> true){
+  TextOut(0, LCD_LINE5, "Fehler: Multiplexer");
+  Off(M);
+  Wait(100000);
+  ClearScreen();
+ }
+
+ smuxSetSensorLegoLight(msensor_S3_2, true);                                    //rechts innen
+ smuxSetSensorLegoLight(msensor_S3_3, true);                                    //links innen
+ smuxSetSensorLegoLight(msensor_S3_4, true);                                    //Oben
+
+
+ while(Pacours){
+
+
+  if(Sensor(TS) == 1){
+   ClearScreen();
+   TextOut(0,LCD_LINE3,"Dose");
+   RotateMotor(M,70, -300);
+   RotateMotor(MR,70,300);
+   //RotateMotor(ML,70,-300);
+
+   until((Sensor(IN_1) < SchwelleLA) || (smuxSensorLegoLightNorm(msensor_S3_3) < SchwelleLI)){
+OnFwdReg(M, Standard, OUT_REGMODE_SYNC);
+   }
+   ClearScreen();
+  }
+  else{
+   OnFwdReg(M, Standard, OUT_REGMODE_SYNC);
+   ClearScreen();
+  }
+
+
+    if(Sensor(IN_1) < SchwelleRA){
+   OnFwd(OUT_B, 65);
+   OnRev(OUT_C,65);
+   Wait(200);
+  }
+  else{
+   OnFwdReg(M, Standard, OUT_REGMODE_SYNC);
+   ClearScreen();
+  }
+
+
+
+
+
+
+  if(smuxSensorLegoLightNorm(msensor_S3_2) < SchwelleRI){
+   OnFwd(OUT_C, 70);
+   OnRev(OUT_B,70);
+   Wait(150);
+  }
+  else{
+   OnFwdReg(M, Standard, OUT_REGMODE_SYNC);
+   ClearScreen();
+  }
+
+
+  if(smuxSensorLegoLightNorm(msensor_S3_3) < SchwelleLI){
+   OnFwd(OUT_B, 50);
+   OnRev(OUT_C,50);
+   Wait(150);
+  }
+  else{
+   OnFwdReg(M, Standard, OUT_REGMODE_SYNC);
+   ClearScreen();
+  }
+
+
+
+}
+}

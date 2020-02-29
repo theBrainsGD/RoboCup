@@ -1,0 +1,133 @@
+ #define TS IN_2
+ #define FSR IN_1
+ #define FSL IN_4
+
+ int farbwerte_l[];
+ int farbwerte_r[];
+
+ int gruenMinl = 290      ;
+ int gruenMaxl = 390      ;
+ int gruenMinr = 330      ;
+ int gruenMaxr = 440      ;
+ int gruenSchwellel = 500    ;
+ int gruenSchweller = 500    ;
+ int gruenSchwellel1 = 500    ;
+ int gruenSchweller1 = 500    ;
+
+
+ int rotMinl   = 175     ;
+ int rotMaxl   = 290     ;
+ int rotMinr   = 175     ;
+ int rotMaxr   = 320     ;
+ int rotSchwellel = 490  ;
+ int rotSchweller = 500  ;
+ int rotSchwellel1 = 490  ;
+ int rotSchweller1 = 500  ;
+
+ int blauMinl   = 240    ;
+ int blauMaxl   = 350    ;
+ int blauMinr   = 205    ;
+ int blauMaxr   = 320    ;
+ int blauSchwellel = 450 ;
+ int blauSchweller = 475 ;
+ int blauSchwellel1 = 450 ;
+ int blauSchweller1 = 475 ;
+
+
+ void Setup(){
+ until(ButtonPressed(BTNCENTER, 1))
+ {
+  ReadSensorColorRaw(FSL, farbwerte_l);
+  TextOut(0,LCD_LINE4,"  Will gruen-");
+  TextOut(0,LCD_LINE5,"  wertL anpassen");
+  rotSchwellel = farbwerte_l[0];
+  rotMinl = rotSchwellel - 50;
+  rotMaxl = rotSchwellel + 50;
+  
+  gruenSchwellel = farbwerte_l[1];
+  gruenMinl = gruenSchwellel - 50;
+  gruenMaxl = gruenSchwellel + 50;
+  
+  blauSchwellel = farbwerte_l[2];
+  blauMinl = blauSchwellel - 50;
+  blauMaxl = blauSchwellel + 50;
+ }
+
+ ClearScreen();
+ TextOut(0,LCD_LINE4,"  Passe gruen-");
+ TextOut(0,LCD_LINE5,"    wertL an");
+ Wait(1000);
+ ClearScreen();
+
+
+ until(ButtonPressed(BTNCENTER, 1))
+ {
+  ReadSensorColorRaw(FSR, farbwerte_r);
+  TextOut(0,LCD_LINE4,"  Will gruen-");
+  TextOut(0,LCD_LINE5,"  wertR anpassen");
+  rotSchweller = farbwerte_r[0];
+  rotMinr = rotSchweller - 50;
+  rotMaxr = rotSchweller + 50;
+
+  gruenSchweller = farbwerte_r[1];
+  gruenMinr = gruenSchweller - 50;
+  gruenMaxr = gruenSchweller + 50;
+
+  blauSchweller = farbwerte_r[2];
+  blauMinr = blauSchweller - 50;
+  blauMaxr = blauSchweller + 50;
+ }
+
+ ClearScreen();
+ TextOut(0,LCD_LINE4,"  Passe Gruen-");
+ TextOut(0,LCD_LINE5,"    wertR an");
+ Wait(1000);
+ ClearScreen();
+
+ until(ButtonPressed(BTNCENTER, 1))
+ {
+ TextOut(0,LCD_LINE4,"   Noch einmal");
+ TextOut(0,LCD_LINE5,"   drücken zum");
+ TextOut(0,LCD_LINE6,"   beenden");
+ TextOut(0,LCD_LINE7,"   des kalibrirens ");
+ }
+ ClearScreen();
+ Wait(500);
+}
+
+
+
+
+
+
+ task main()
+{
+ SetSensorTouch(IN_2);
+ SetSensorColorFull(IN_4);
+ SetSensorColorFull(IN_1);
+ 
+ 
+ Setup();
+
+ while(true){
+int rotWert = ReadSensorColorRaw(FSR, farbwerte[0]);
+
+
+while((rotWert > rotSchweller1 -20) &&
+      (ReadSensorColorRaw(FSR) < rotSchweller1 +20) &&
+      (ReadSensorColorRaw(FSR) > gruenSchweller1-20)
+
+
+)
+  {
+   OnFwd(OUT_C, 60);
+   OnRev(OUT_B, 60);
+   Wait(200);
+  }
+  else
+  OnFwd(OUT_BC,50);
+
+
+
+ }
+ }

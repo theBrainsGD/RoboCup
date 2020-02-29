@@ -1,0 +1,168 @@
+#define GESCH_INNEN 30
+
+#define LINKS true
+#define RECHTS false
+
+task main()
+{
+ SetSensorTouch(IN_2);                                         // RECHTS == C
+ SetSensorColorFull(IN_4);                                     //LINKS == A
+ SetSensorColorFull(IN_1);
+
+ int farbwerte_l[];
+ int farbwerte_r[];
+                                                        //  LINKS
+ int gruenMinl = 290      ;
+ int gruenMaxl = 390      ;
+ int gruenMinr = 330      ;                     //  gr¸n         weiﬂ         schwarz
+ int gruenMaxr = 440      ;
+ int gruenSchwellel = 500    ;
+ int gruenSchweller = 500    ;
+
+                                                //  rot:206      rot:650      rot:340
+ int rotMinl   = 175   ;                     //  gr¸n:340     gr¸n:655     gr¸n:345
+ int rotMaxl   = 290   ;                     //  blau:290     blau:660     blau:335
+ int rotMinr   = 175   ;
+ int rotMaxr   = 320   ;                              // RECHTS
+ int rotSchwellel = 490  ;
+ int rotSchweller = 500  ;                           //  rot:220     rot:685      rot:380
+                                                //  gr¸n:375     gr¸n:675     gr¸n:350
+ int blauMinl   = 240    ;                      //  blau:265     blau:645     blau:365
+ int blauMaxl   = 350    ;
+ int blauMinr   = 205    ;
+ int blauMaxr   = 320    ;
+ int blauSchwellel = 450     ;
+ int blauSchweller = 475    ;
+
+
+
+ while(true)
+ {
+   ReadSensorColorRaw (IN_4,farbwerte_l);
+   int rotWertl   = farbwerte_l[0];
+   int gruenWertl = farbwerte_l[1];
+   int blauWertl  = farbwerte_l[2];
+   ReadSensorColorRaw(IN_1,farbwerte_r);
+   int gruenWertr = farbwerte_r[1];
+   int rotWertr   = farbwerte_r[0];
+   int blauWertr  = farbwerte_r[2];
+
+   TextOut(5,20, "Gr¸nl:");
+   NumOut(50,20, gruenWertl);
+   TextOut(5,30, "Gr¸nr:");
+   NumOut(50,30,  gruenWertr);
+   
+   TextOut(5,0, "Rotl:");
+   NumOut(50,0, rotWertl);
+   TextOut(5,10, "Rotr:");
+   NumOut(50,10,  rotWertr);
+
+   TextOut(5,40, "Blaul:");
+   NumOut(50,40, blauWertl);
+   TextOut(5,50, "Blaur:");
+   NumOut(50,50,  blauWertr);
+
+
+ if(gruenWertl > gruenMinl && gruenWertl <  gruenMaxl &&
+    gruenWertr > gruenMinr && gruenWertr < gruenMaxr &&
+    rotWertl < rotMinl  &&  rotWertl < rotMaxl &&
+    rotWertr < rotMinr && rotWertr < rotMaxr)               // beide gr¸n
+    {
+   //PlaySound(SOUND_LOW_BEEP);
+                                  // stop
+    }
+ else if(gruenWertl > gruenMinl && gruenWertl < gruenMaxl&&
+    rotWertl > rotMinl  &&  rotWertl < rotMaxl&&
+    blauWertl > blauMinl && blauWertl < blauMaxl )           // gr¸n L (= gr¸nl & rotl & blaul)
+ { PlaySound(SOUND_LOW_BEEP);
+   Wait(100);
+   RotateMotor(OUT_AC,50,5000);
+   OnRev(OUT_A,75);
+   OnFwd(OUT_C,75);                                         // drehen rechts
+
+ }
+ else if(gruenWertr > gruenMinr && gruenWertr <  gruenMaxr &&
+    rotWertr > rotMinr && rotWertr < rotMaxr &&
+    blauWertr > blauMinr && blauWertr < blauMaxr )          // gr¸n R(= gr¸nr & rotr & blaur)
+ { PlaySound(SOUND_LOW_BEEP);
+   Wait(100);
+   RotateMotor(OUT_AC,50,5000);
+   OnRev(OUT_C,75);                                          // drehen rechts
+   OnFwd(OUT_A,75);
+ }
+ else
+ {
+  if(gruenWertl > gruenSchwellel &&
+     rotWertl > rotSchwellel    &&            // weiﬂ links
+     blauWertl > blauSchwellel   )
+
+    {
+    
+       OnFwd(OUT_A,100);                                    // geradeaus links
+    }
+    else
+    {
+    OnRev(OUT_A,100);
+                                           // schwarz links
+    }
+  if(gruenWertr > gruenSchweller &&
+      rotWertr > rotSchweller &&
+      blauWertr > blauSchweller )       // weiﬂ rechts
+     {                                                     // geradeaus rechts
+      OnFwd(OUT_C,100);
+     }
+     else                                                  // schwarz rechts
+     {
+     OnRev(OUT_C,100);
+
+      }
+      
+else if(gruenWertl < gruenSchwellel && gruenWertr < gruenSchweller
+         && rotWertl < rotSchwellel && rotWertr < rotSchweller &&
+        blauWertl < blauSchwellel && gruenWertr < gruenSchwellel)
+     {
+        OnRev(OUT_AC,75);
+        Wait(10);
+
+   }
+         }
+
+}                                                          // Ende else
+  /*if(Sensor(IN_2)==1)                                      // tastsensor gedr¸ckt
+ {
+  if(Richtung == LINKS)                                    //zum rechts herumfahren
+  {
+    RotateMotor(OUT_AC, 50, -100);                         //zur¸ck
+    RotateMotor(OUT_A, 50, -350);                          //drehen
+    RotateMotor(OUT_C, 50, 350);
+    RotateMotor(OUT_AC, 50, 150);                          //vor
+    while(gruenWertr > gruenMinr)
+    {
+      OnFwd(OUT_A, 125);                                   //kurve
+      OnFwd(OUT_C, GESCH_INNEN);
+    }
+    OnFwd(OUT_AC, 0);                                     //Motoren aus
+    RotateMotor(OUT_C, 100, 200);                         //wieder auf die linie
+    RotateMotor(OUT_A, 100, -100);
+  }
+  else                                                    //zum links herumfahren
+  {
+    RotateMotor(OUT_AC, 50, -100);
+    RotateMotor(OUT_C, 50, -350);
+    RotateMotor(OUT_A, 50, 350);
+    RotateMotor(OUT_AC, 50, 150);
+    while(L > SW_L)
+    {
+      OnFwd(OUT_C, GESCH_INNEN);
+      OnFwd(OUT_A, 125);
+    }
+    OnFwd(OUT_AC, 0);
+    RotateMotor(OUT_A, 100, 200);
+    RotateMotor(OUT_C, 100, -100);
+  }
+}
+   */
+
+}                                                         // Ende while
+
+

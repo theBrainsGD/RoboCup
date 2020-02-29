@@ -1,0 +1,135 @@
+
+#define L Sensor(IN_3)
+#define R Sensor(IN_1)
+//#define M Sensor(IN_4)
+
+#define SW_L 51
+#define SW_R 57
+// #define SW_M 80
+
+#define GESCH_INNEN 30
+
+#define LINKS true
+#define RECHTS false
+
+void dose ( bool Richtung)            //Dose umfahren mit Wert für Richtung (true oder false)
+{
+  if(Richtung == LINKS)               //zum rechts herumfahren
+  {
+    RotateMotor(OUT_AC, 50, -100);    //zurück
+    RotateMotor(OUT_A, 50, -350);     //drehen
+    RotateMotor(OUT_C, 50, 350);
+    RotateMotor(OUT_AC, 50, 150);     //vor
+    while(R > SW_R)
+    {
+      OnFwd(OUT_A, 125);              //kurve
+      OnFwd(OUT_C, GESCH_INNEN);
+    }
+    OnFwd(OUT_AC, 0);                 //Motoren aus
+    RotateMotor(OUT_C, 100, 200);     //wieder auf die linie
+    RotateMotor(OUT_A, 100, -100);
+  }
+  else                                //zum links herumfahren
+  {
+    RotateMotor(OUT_AC, 50, -100);
+    RotateMotor(OUT_C, 50, -350);
+    RotateMotor(OUT_A, 50, 350);
+    RotateMotor(OUT_AC, 50, 150);
+    while(L > SW_L)
+    {
+      OnFwd(OUT_C, GESCH_INNEN);
+      OnFwd(OUT_A, 125);
+    }
+    OnFwd(OUT_AC, 0);
+    RotateMotor(OUT_A, 100, 200);
+    RotateMotor(OUT_C, 100, -100);
+  }
+}
+
+void linie(int Geschwindigkeit)
+{
+   if(L < SW_L && R < SW_R)
+   {
+      RotateMotor(OUT_AC, 100,250);
+      RotateMotor(OUT_A, 50, -350);
+      bool b = false;
+      int i = CurrentTick();
+      int j = CurrentTick();
+      while(j < i+2000)
+      {
+          j = CurrentTick();     //millisekunden
+          OnFwd(OUT_C, 125);
+          OnFwd(OUT_A, 0);
+          if(L < SW_L)
+          {
+             b = true;
+             break;
+          }
+      }
+      if(b == false)
+      {
+          OnFwd(OUT_C, 0);
+          OnFwd(OUT_A, 125);
+          Wait(1000);
+          i = CurrentTick();
+          j = CurrentTick();
+          while(j < i+5000)
+          {
+            j = CurrentTick();
+            OnFwd(OUT_A, 125);
+            OnFwd(OUT_C, 0);
+            if(R < SW_R)
+            {
+               break;
+            }
+         }
+      }
+   }
+   else
+
+
+   {
+      if(L > SW_L)
+      {
+        OnFwd(OUT_C, Geschwindigkeit);
+      }
+      else
+      {
+        OnRev(OUT_C, Geschwindigkeit);
+      }
+
+      if(R > SW_R)
+      {
+        OnFwd(OUT_A, Geschwindigkeit);
+      }
+      else
+      {
+        OnRev(OUT_A, Geschwindigkeit);
+      }
+   }
+}
+
+
+   
+
+
+task main ()
+{                          //hier startet das programm
+   SetSensorLight(IN_1);
+   SetSensorLight(IN_3);
+   SetSensorTouch(IN_2);
+   
+     while(true)             //unendlich oft durchführen
+   {
+     if(Sensor(IN_2) == 1) //wenn gedrückt
+     {
+       dose(LINKS);        //Dose in (x) Richtung umfahren
+     }
+     else                  //wenn nicht gedrückt
+     {
+       linie(100);         //linie folgen mit Tempo (x)
+     }
+   }
+}
+      
+      

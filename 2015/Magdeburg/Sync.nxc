@@ -1,0 +1,17 @@
+task main(){
+
+while(true){
+ClearScreen();
+ OnFwd(OUT_BC, 50);
+ TextOut(0,LCD_LINE5, "normal");
+ Wait(10000);
+ OnFwdReg(OUT_BC, 50, OUT_REGMODE_SYNC);
+ ClearScreen();
+ TextOut(0,LCD_LINE5, "SYNC");
+ Wait(10000);
+ Off(OUT_BC);
+ ClearScreen();
+ TextOut(0,LCD_LINE5, "off");
+ Wait(10000);
+}
+}

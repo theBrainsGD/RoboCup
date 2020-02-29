@@ -1,0 +1,2511 @@
+#SYMBOLS
+Index	Identifier	Type	Flag	Data	Size	RefCount
+0	__DU0main	5	1	0	4	4
+1	__D0smuxSensorLegoLightNorm	6	1	4	4	7
+2	__D0main	6	1	8	4	20
+3	__D0HTSMUXsetAnalogueInactive	6	1	12	4	5
+4	__DU0HTSMUXsetAnalogueInactive	5	1	16	4	6
+5	__D0smuxSensorLegoLightRaw	6	1	20	4	2
+6	__unsigned_stack_001_HTSMUXsendCmd	5	1	24	4	10
+7	__signed_stack_001_HTSMUXsetMode	6	1	28	4	10
+8	__signed_stack_002_HTSMUXsendCmd	6	1	32	4	2
+9	__DU0smuxSetSensorLegoLight	5	1	36	4	8
+10	__signed_stack_001_HTSMUXsendCmd	6	1	40	4	8
+11	__DU0_HTSMUXsetMode	5	1	44	4	9
+12	__D0Button1	6	1	48	4	40
+13	__D0_HTSMUXsetMode	6	1	52	4	30
+14	__D0_HTSMUXsendCmd	6	1	56	4	34
+15	__DU0_HTSMUXsendCmd	5	1	60	4	15
+16	__D0HTSMUXreadAnalogue	6	1	64	4	26
+17	__D0HTSMUXsetAnalogueActive	6	1	68	4	5
+18	__DU0HTSMUXsetAnalogueActive	5	1	72	4	6
+19	__DU0HTSMUXscanPorts	5	1	76	4	11
+20	__DU0HTSMUXreadAnalogue	5	1	80	4	2
+21	__D0HTSMUXscanPorts	6	1	84	4	23
+22	__signed_stack_001main	6	1	88	4	6
+23	__signed_stack_002main	6	1	92	4	2
+24	__unsigned_stack_001HTSMUXsetAnalogueInactive	5	1	96	4	2
+25	__unsigned_stack_001HTSMUXsetAnalogueActive	5	1	100	4	2
+26	__signed_stack_001HTSMUXsetAnalogueInactive	6	1	104	4	6
+27	__unsigned_stack_001main	5	1	108	4	2
+28	__Wait_7qG2_ms_7qG2_000_inline_Button1	5	1	112	4	5
+29	__Wait_7qG2_ms_7qG2_000_inline_main	5	1	116	4	3
+30	__Wait_7qG2_ms_7qG2_000_inline__HTSMUXsendCmd	5	1	120	4	2
+31	__signed_stack_001smuxSensorLegoLightNorm	6	1	124	4	2
+32	__signed_stack_001smuxSensorLegoLightRaw	6	1	128	4	2
+33	__signed_stack_002Button1	6	1	132	4	40
+34	__signed_stack_001HTSMUXreadAnalogue	6	1	136	4	12
+35	__signed_stack_001Button1	6	1	140	4	54
+36	__signed_stack_002_HTSMUXsetMode	6	1	144	4	2
+37	__unsigned_stack_001_HTSMUXsetMode	5	1	148	4	8
+38	__signed_stack_002HTSMUXreadAnalogue	6	1	152	4	4
+39	__unsigned_stack_001HTSMUXscanPorts	5	1	156	4	6
+40	__signed_stack_001HTSMUXsetAnalogueActive	6	1	160	4	6
+41	__signed_stack_002HTSMUXscanPorts	6	1	164	4	4
+42	__unsigned_stack_001HTSMUXreadAnalogue	5	1	168	4	8
+43	__signed_stack_001HTSMUXscanPorts	6	1	172	4	16
+44	__CLSRMutex3	9	0	176	4	2
+45	__TextOutMutex	9	0	180	4	42
+46	__CLSCSMutex3	9	0	184	4	22
+47	__CLSWMutex3	9	0	188	4	6
+48	__PointOutMutex	9	0	192	4	20
+49	__RLSBmutex2	9	0	196	4	4
+50	__RLSBmutex3	9	0	200	4	4
+51	__RLSBmutex0	9	0	204	4	4
+52	__RLSBmutex1	9	0	208	4	4
+53	__CLSRMutex0	9	0	212	4	2
+54	__CLSCSMutex1	9	0	216	4	22
+55	__CLSCSMutex0	9	0	220	4	22
+56	__CLSWMutex0	9	0	224	4	6
+57	__CLSWMutex1	9	0	228	4	6
+58	__CLSWMutex2	9	0	232	4	6
+59	__CLSRMutex2	9	0	236	4	2
+60	__CLSRMutex1	9	0	240	4	2
+61	__CLSCSMutex2	9	0	244	4	22
+62	SchwelleLA1	4	1	248	2	2
+63	__HTSMUXscanPorts_7qG2_i_7qG2_001	4	1	250	2	7
+64	SchwelleLA	4	0	252	2	2
+65	SchwelleLA2	4	1	254	2	2
+66	SchwelleRA1	4	0	256	2	2
+67	SchwelleRA	4	0	258	2	2
+68	__constVal1024	4	0	260	2	1
+69	__constVal255	4	0	262	2	2
+70	__constVal200	4	0	264	2	20
+71	SchwelleRA2	4	1	266	2	2
+72	__constVal60	2	0	268	1	2
+73	__constVal96	2	0	269	1	6
+74	__constVal63	2	0	270	1	6
+75	___HTSMUXsendCmd_return	1	1	271	1	9
+76	__constVal32	2	0	272	1	20
+77	__constVal34	2	0	273	1	2
+78	___HTSMUXsendCmd_7qG2_cmd_7qG2_000	1	1	274	1	10
+79	__smuxSetSensorLegoLight_7qG2_active_7qG2_000	1	1	275	1	6
+80	__HTSMUXreadAnalogue_7qG2_muxport_7qG2_000	1	1	276	1	3
+81	__smuxSetSensorLegoLight_7qG2_muxport_7qG2_000	1	1	277	1	6
+82	__smuxSensorLegoLightRaw_7qG2_muxport_7qG2_000	1	1	278	1	2
+83	__smuxSensorLegoLightNorm_7qG2_muxport_7qG2_000	1	1	279	1	7
+84	___HTSMUXsetMode_7qG2_mode_7qG2_000	1	1	280	1	3
+85	___HTSMUXsendCmd_7qG2_smux_7qG2_000	1	1	281	1	14
+86	___HTSMUXsetMode_7qG2_muxport_7qG2_000	1	1	282	1	4
+87	__HTSMUXsetAnalogueInactive_7qG2_muxport_7qG2_000	1	1	283	1	5
+88	__HTSMUXsetAnalogueActive_7qG2_muxport_7qG2_000	1	1	284	1	5
+89	___HTSMUXsetMode_7qG2_channel_7qG2_000	1	1	285	1	2
+90	___HTSMUXsetMode_7qG2_regaddr_7qG2_000	1	1	286	1	2
+91	___HTSMUXsetMode_7qG2_smux_7qG2_000	1	1	287	1	9
+92	__HTSMUXscanPorts_7qG2_size_7qG2_000	1	1	288	1	3
+93	___HTSMUXsetMode_return	1	1	289	1	7
+94	__smuxSensorLegoLightNorm_return	1	1	290	1	9
+95	__smuxSetSensorLegoLight_return	1	1	291	1	8
+96	__smuxSensorLegoLightRaw_return	1	1	292	1	4
+97	__HTSMUXsetAnalogueActive_return	1	1	293	1	6
+98	__HTSMUXsetAnalogueInactive_return	1	1	294	1	6
+99	__OnRev_Tmp	2	1	295	1	4
+100	__Button1_return	1	1	296	1	3
+101	____initialize_global_data_return	1	1	297	1	3
+102	__SetSensorTouch_7qG2_port_7qG2_000_inline_main	1	1	298	1	4
+103	__SetSensor_7qG2_port_7qG2_000_inline_main	1	1	299	1	4
+104	__HTSMUXreadAnalogue_7qG2_channel_7qG2_000	1	1	300	1	2
+105	__HTSMUXscanPorts_return	1	1	301	1	7
+106	__HTSMUXreadAnalogue_7qG2_smux_7qG2_000	1	1	302	1	6
+107	__HTSMUXreadAnalogue_return	1	1	303	1	7
+108	__HTSMUXreadAnalogue_7qG2_count_7qG2_000	1	1	304	1	3
+109	__HTSMUXscanPorts_7qG2_smux_7qG2_000	1	1	305	1	9
+110	____ReadLSBytesVar_return	1	1	306	1	4
+111	__zfHTSMUXscanPorts	1	1	307	1	15
+112	__tmpsbyte_HTSMUXsendCmd	2	1	308	1	4
+113	__ArrHelper__HTSMUXsetAnalogueInactive_98_0	1	1	309	1	2
+114	__constVal2	2	0	310	1	13
+115	__zfmain	1	1	311	1	11
+116	__ArrHelper__HTSMUXsetAnalogueActive_98_0	1	1	312	1	2
+117	__zfHTSMUXsetAnalogueActive	1	1	313	1	5
+118	__zfHTSMUXsetAnalogueInactive	1	1	314	1	5
+119	__zfHTSMUXreadAnalogue	1	1	315	1	13
+120	__tmpsbyte_HTSMUXsetMode	2	1	316	1	4
+121	__RLSReadPort	1	1	317	1	5
+122	__constVal10	2	0	318	1	1
+123	__zf_HTSMUXsendCmd	1	1	319	1	18
+124	__zf_HTSMUXsetMode	1	1	320	1	20
+125	__RLSBytesCountVar	1	1	321	1	10
+126	__RLSBResultVar	2	1	322	1	9
+127	__RLSBIterationsVar	1	1	323	1	4
+128	__zfButton1	1	1	324	1	10
+129	__constVal100	2	0	325	1	1
+130	__constVal5	2	0	326	1	2
+131	__ResetSensorPort	1	1	327	1	4
+132	____ResetSensorSubroutine_return	1	1	328	1	4
+133	__ResetSensorTmp	1	1	329	1	2
+134	__constVal1	2	0	330	1	18
+135	__constVal16	2	0	331	1	3
+136	__constVal0	2	1	332	1	29
+137	__constVal4	2	0	333	1	16
+138	__constVal3	2	0	334	1	6
+139	__zfsmuxSetSensorLegoLight	1	1	335	1	2
+140	__ArrHelper__HTSMUXscanPorts_98_0	1	1	336	1	4
+141	__ArrHelper___HTSMUXsetMode_98_0	1	1	337	1	4
+142	__ArrHelper__HTSMUXreadAnalogue_98_0	1	1	338	1	8
+143	__RBtnArgs	8	0	5	8	25
+144	__RBtnArgs.Result	2	1	340	1	25
+145	__RBtnArgs.Index	1	1	341	1	25
+146	__RBtnArgs.Pressed	1	1	342	1	25
+147	__RBtnArgs.Count	1	1	343	1	25
+148	__RBtnArgs.Reset	1	1	344	1	25
+149	__PointOutArgs	8	0	3	12	40
+150	__PointOutArgs.Result	2	1	348	1	40
+151	__PointOutArgs.Location	8	0	2	4	40
+152	__PointOutArgs.Location.X	4	1	352	2	40
+153	__PointOutArgs.Location.Y	4	1	354	2	40
+154	__PointOutArgs.Options	5	1	356	4	40
+155	__TextOutArgs	8	0	4	16	126
+156	__TextOutArgs.Result	2	1	360	1	126
+157	__TextOutArgs.Location	8	0	2	4	126
+158	__TextOutArgs.Location.X	4	1	364	2	126
+159	__TextOutArgs.Location.Y	4	1	366	2	126
+160	__TextOutArgs.Text	7	0	368	4	126
+161	__TextOutArgs.Text.Text_type	1	0	0	1	0
+162	__TextOutArgs.Options	5	1	372	4	126
+163	__CLSWArgs0	8	0	4	12	15
+164	__CLSWArgs0.Result	2	1	376	1	15
+165	__CLSWArgs0.Port	1	1	377	1	15
+166	__CLSWArgs0.Buffer	7	0	378	4	15
+167	__CLSWArgs0.Buffer.Buffer_type	1	0	0	1	0
+168	__CLSWArgs0.ReturnLen	1	1	380	1	15
+169	__CLSRArgs0	8	0	4	12	5
+170	__CLSRArgs0.Result	2	1	384	1	5
+171	__CLSRArgs0.Port	1	1	385	1	5
+172	__CLSRArgs0.Buffer	7	0	386	4	5
+173	__CLSRArgs0.Buffer.Buffer_type	1	0	0	1	0
+174	__CLSRArgs0.BufferLen	1	1	388	1	5
+175	__CLSCSArgs0	8	0	3	4	42
+176	__CLSCSArgs0.Result	2	1	392	1	42
+177	__CLSCSArgs0.Port	1	1	393	1	42
+178	__CLSCSArgs0.BytesReady	1	1	394	1	42
+179	__constStr0018	7	0	396	4	1
+180	__constStr0018.__constStr0018_type	1	1	0	1	0
+181	__constStr0016	7	0	398	4	1
+182	__constStr0016.__constStr0016_type	1	1	0	1	0
+183	__constStr0017	7	0	400	4	1
+184	__constStr0017.__constStr0017_type	1	1	0	1	0
+185	__constStr0015	7	0	402	4	1
+186	__constStr0015.__constStr0015_type	1	1	0	1	0
+187	__constStr0019	7	0	404	4	1
+188	__constStr0019.__constStr0019_type	1	1	0	1	0
+189	__constStr0023	7	0	406	4	1
+190	__constStr0023.__constStr0023_type	1	1	0	1	0
+191	__OUT_BC	7	0	408	4	2
+192	__OUT_BC.__OUT_BC_type	1	0	0	1	0
+193	__constStr0022	7	0	410	4	1
+194	__constStr0022.__constStr0022_type	1	1	0	1	0
+195	__constStr0020	7	0	412	4	1
+196	__constStr0020.__constStr0020_type	1	1	0	1	0
+197	__constStr0021	7	0	414	4	1
+198	__constStr0021.__constStr0021_type	1	1	0	1	0
+199	__HTSMUXscanPorts_7qG2_sendMsg_7qG2_000	7	0	416	4	6
+200	__HTSMUXscanPorts_7qG2_sendMsg_7qG2_000.__HTSMUXscanPorts_7qG2_sendMsg_7qG2_000_type	1	0	0	1	0
+201	__strbufmain	7	0	418	4	2
+202	__strbufmain.__strbufmain_type	1	0	0	1	0
+203	___HTSMUXsetMode_7qG2_sendMsg_7qG2_000	7	0	420	4	2
+204	___HTSMUXsetMode_7qG2_sendMsg_7qG2_000.___HTSMUXsetMode_7qG2_sendMsg_7qG2_000_type	1	0	0	1	0
+205	__HTSMUXscanPorts_7qG2_readMsg_7qG2_000	7	0	422	4	2
+206	__HTSMUXscanPorts_7qG2_readMsg_7qG2_000.__HTSMUXscanPorts_7qG2_readMsg_7qG2_000_type	1	0	0	1	0
+207	__HTSMUXreadAnalogue_7qG2_readMsg_7qG2_000	7	0	424	4	4
+208	__HTSMUXreadAnalogue_7qG2_readMsg_7qG2_000.__HTSMUXreadAnalogue_7qG2_readMsg_7qG2_000_type	1	0	0	1	0
+209	smuxSensorTypes	7	0	426	4	7
+210	smuxSensorTypes.smuxSensorTypes_type	1	0	0	1	0
+211	smuxStatus	7	0	428	4	14
+212	smuxStatus.smuxStatus_type	1	0	0	1	0
+213	__HTSMUXreadAnalogue_7qG2_sendMsg_7qG2_000	7	0	430	4	6
+214	__HTSMUXreadAnalogue_7qG2_sendMsg_7qG2_000.__HTSMUXreadAnalogue_7qG2_sendMsg_7qG2_000_type	1	0	0	1	0
+215	___HTSMUXsendCmd_7qG2_sendMsg_7qG2_000	7	0	432	4	2
+216	___HTSMUXsendCmd_7qG2_sendMsg_7qG2_000.___HTSMUXsendCmd_7qG2_sendMsg_7qG2_000_type	1	0	0	1	0
+217	__constStr0012	7	0	434	4	1
+218	__constStr0012.__constStr0012_type	1	1	0	1	0
+219	__constStr0011	7	0	436	4	4
+220	__constStr0011.__constStr0011_type	1	1	0	1	0
+221	__constStr0014	7	0	438	4	1
+222	__constStr0014.__constStr0014_type	1	1	0	1	0
+223	__constStr0013	7	0	440	4	1
+224	__constStr0013.__constStr0013_type	1	1	0	1	0
+225	__constStr0010	7	0	442	4	1
+226	__constStr0010.__constStr0010_type	1	1	0	1	0
+227	__strbufButton1	7	0	444	4	40
+228	__strbufButton1.__strbufButton1_type	1	0	0	1	0
+229	__RLSLastGoodReadVar	7	0	446	4	2
+230	__RLSLastGoodReadVar.__RLSLastGoodReadVar_type	1	0	0	1	0
+231	__constStr0009	7	0	448	4	4
+232	__constStr0009.__constStr0009_type	1	1	0	1	0
+233	__RLSReadBufVar	7	0	450	4	10
+234	__RLSReadBufVar.__RLSReadBufVar_type	1	0	0	1	0
+#SOURCES
+Clump	Line	PC	Source
+0	264	0	#line 264 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	265	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	264	2	#line 264 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	264	2	#line 264 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	265	2		set __SetSensor_7qG2_port_7qG2_000_inline_main, 2
+0	264	5	#line 264 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	264	5	#line 264 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	3707	5	#line 3707 "NXCDefs.h"
+0	3708	5		setin __constVal10, __SetSensor_7qG2_port_7qG2_000_inline_main, 0
+0	3709	9		setin __constVal0, __SetSensor_7qG2_port_7qG2_000_inline_main, 1
+0	3710	13	#pragma macro 4
+0	3710	13		mov __ResetSensorPort, __SetSensor_7qG2_port_7qG2_000_inline_main
+0	3710	15		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	15124	18	#line 15124 "NXCDefs.h"
+0	3711	18	#line 3711 "NXCDefs.h"
+0	265	18	#line 265 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	265	18	#line 265 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	266	18		set __HTSMUXscanPorts_7qG2_smux_7qG2_000, 2
+0	265	21	#line 265 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	265	21	#line 265 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	266	21		subcall HTSMUXscanPorts, __HTSMUXscanPorts_return
+0	265	23	#line 265 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	266	23		mov __unsigned_stack_001main, __DU0HTSMUXscanPorts
+0	265	25	#line 265 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	266	25	#line 266 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	267	25		set __D0main, 1
+0	266	28	#line 266 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	267	28		cmp 5, __zfmain, __unsigned_stack_001main, __D0main
+0	266	32	#line 266 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	267	32		mov __D0main, __zfmain
+0	267	34	#line 267 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	268	34		brtst 4, __NXC_Label_1592, __zfmain
+0	267	37	#line 267 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	268	37		set __signed_stack_001main, 0
+0	267	40	#line 267 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	267	40	#line 267 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	268	40		set __signed_stack_002main, 24
+0	267	43	#line 267 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	267	43	#line 267 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	268	43		strcat __strbufmain, __constStr0023
+0	268	47	#line 268 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	269	47		acquire __TextOutMutex
+0	268	48	#line 268 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	269	48		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	268	51	#line 268 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	269	51		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	268	54	#line 268 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	269	54		set __TextOutArgs.Options, 0
+0	268	57	#line 268 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	269	57		mov __TextOutArgs.Text, __strbufmain
+0	268	59	#line 268 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	269	59		syscall 13, __TextOutArgs
+0	268	62	#line 268 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	269	62		mov __D0main, __TextOutArgs.Result
+0	268	65	#line 268 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	269	65		release __TextOutMutex
+0	268	66	#line 268 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	268	66	#line 268 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	269	66		set __Wait_7qG2_ms_7qG2_000_inline_main, 1000
+0	268	69	#line 268 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	7921	69	#line 7921 "NXCDefs.h"
+0	7922	69		wait 1000
+0	7921	71	#line 7921 "NXCDefs.h"
+0	269	71	#line 269 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	6069	71	#line 6069 "NXCDefs.h"
+0	6070	71	#pragma macro 6
+0	6070	71		acquire __PointOutMutex
+0	6070	72		mov __PointOutArgs.Location.X, __constVal200
+0	6070	74		mov __PointOutArgs.Location.Y, __constVal200
+0	6070	76		mov __PointOutArgs.Options, __constVal1
+0	6070	78		syscall 14, __PointOutArgs
+0	6070	81		release __PointOutMutex
+0	15195	82	#line 15195 "NXCDefs.h"
+0	6069	82	#line 6069 "NXCDefs.h"
+0	270	82	#line 270 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	272	82	#line 272 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	272	82	#line 272 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	273	82		set __smuxSetSensorLegoLight_7qG2_muxport_7qG2_000, 8
+0	272	85	#line 272 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	272	85	#line 272 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	273	85		set __smuxSetSensorLegoLight_7qG2_active_7qG2_000, 1
+0	272	88	#line 272 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	273	88	#line 273 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	274	88		subcall smuxSetSensorLegoLight, __smuxSetSensorLegoLight_return
+0	273	90	#line 273 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	274	90		mov __DU0main, __DU0smuxSetSensorLegoLight
+0	273	92	#line 273 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	273	92	#line 273 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	274	92		set __smuxSetSensorLegoLight_7qG2_muxport_7qG2_000, 9
+0	273	95	#line 273 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	273	95	#line 273 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	274	95		set __smuxSetSensorLegoLight_7qG2_active_7qG2_000, 1
+0	273	98	#line 273 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	274	98	#line 274 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	275	98		subcall smuxSetSensorLegoLight, __smuxSetSensorLegoLight_return
+0	274	100	#line 274 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	275	100		mov __DU0main, __DU0smuxSetSensorLegoLight
+0	274	102	#line 274 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	274	102	#line 274 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	275	102		set __smuxSetSensorLegoLight_7qG2_muxport_7qG2_000, 10
+0	274	105	#line 274 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	274	105	#line 274 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	275	105		set __smuxSetSensorLegoLight_7qG2_active_7qG2_000, 1
+0	274	108	#line 274 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	275	108	#line 275 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	276	108		subcall smuxSetSensorLegoLight, __smuxSetSensorLegoLight_return
+0	275	110	#line 275 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	276	110		mov __DU0main, __DU0smuxSetSensorLegoLight
+0	275	112	#line 275 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	275	112	#line 275 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	276	112		set __smuxSetSensorLegoLight_7qG2_muxport_7qG2_000, 11
+0	275	115	#line 275 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	275	115	#line 275 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	276	115		set __smuxSetSensorLegoLight_7qG2_active_7qG2_000, 1
+0	275	118	#line 275 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	276	118	#line 276 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	277	118		subcall smuxSetSensorLegoLight, __smuxSetSensorLegoLight_return
+0	276	120	#line 276 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	277	120		mov __DU0main, __DU0smuxSetSensorLegoLight
+0	276	122	#line 276 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	276	122	#line 276 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	277	122		set __SetSensorTouch_7qG2_port_7qG2_000_inline_main, 1
+0	276	125	#line 276 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	3718	125	#line 3718 "NXCDefs.h"
+0	3719	125	#pragma macro 6
+0	3719	125		setin __constVal1, __SetSensorTouch_7qG2_port_7qG2_000_inline_main, 0
+0	3719	129		setin __constVal32, __SetSensorTouch_7qG2_port_7qG2_000_inline_main, 1
+0	3719	133		mov __ResetSensorPort, __SetSensorTouch_7qG2_port_7qG2_000_inline_main
+0	3719	135		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	15279	138	#line 15279 "NXCDefs.h"
+0	3718	138	#line 3718 "NXCDefs.h"
+0	278	138	#line 278 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	281	138	#line 281 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	282	138		subcall Button1, __Button1_return
+0	281	140	#line 281 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	282	140	#line 282 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	283	140		set __D0main, 1
+0	283	143	#line 283 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	284	143		tst 5, __zfmain, __D0main
+0	283	146	#line 283 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	284	146		brtst 4, __NXC_Label_1618, __zfmain
+0	283	149	#line 283 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	284	149		set __smuxSensorLegoLightNorm_7qG2_muxport_7qG2_000, 11
+0	283	152	#line 283 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	283	152	#line 283 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	284	152		subcall smuxSensorLegoLightNorm, __smuxSensorLegoLightNorm_return
+0	283	154	#line 283 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	284	154		mov __signed_stack_001main, __D0smuxSensorLegoLightNorm
+0	283	156	#line 283 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	284	156	#line 284 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	285	156		mov __D0main, SchwelleLA
+0	284	158	#line 284 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	285	158		cmp 0, __zfmain, __signed_stack_001main, __D0main
+0	284	162	#line 284 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	285	162		mov __D0main, __zfmain
+0	285	164	#line 285 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	286	164		brtst 4, __NXC_Label_1625, __zfmain
+0	285	167	#line 285 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	286	167		set __D0main, 60
+0	286	170	#line 286 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	287	170	#pragma macro 7
+0	287	170		setout __constVal1, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	15321	193	#line 15321 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	286	193	#line 286 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	286	193	#line 286 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	287	193	#line 287 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	288	193	#pragma macro 10
+0	288	193		neg __OnRev_Tmp, __constVal60
+0	288	196		setout __constVal2, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	15328	219	#line 15328 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	287	219	#line 287 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	287	219	#line 287 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	288	219		set __Wait_7qG2_ms_7qG2_000_inline_main, 200
+0	287	222	#line 287 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	7921	222	#line 7921 "NXCDefs.h"
+0	7922	222		wait 200
+0	7921	224	#line 7921 "NXCDefs.h"
+0	288	224	#line 288 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	291	224	#line 291 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	292	224		jmp __NXC_Label_1632
+0	291	226	#line 291 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	292	226		set __D0main, 50
+0	293	229	#line 293 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	294	229	#pragma macro 7
+0	294	229		setout __OUT_BC, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	15348	252	#line 15348 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	293	252	#line 293 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	293	252	#line 293 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	293	252	#line 293 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	294	252		set __smuxSensorLegoLightNorm_7qG2_muxport_7qG2_000, 8
+0	293	255	#line 293 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	293	255	#line 293 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	294	255		subcall smuxSensorLegoLightNorm, __smuxSensorLegoLightNorm_return
+0	293	257	#line 293 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	294	257		mov __signed_stack_001main, __D0smuxSensorLegoLightNorm
+0	293	259	#line 293 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	294	259	#line 294 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	295	259		mov __D0main, SchwelleRA
+0	294	261	#line 294 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	295	261		cmp 0, __zfmain, __signed_stack_001main, __D0main
+0	294	265	#line 294 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	295	265		mov __D0main, __zfmain
+0	295	267	#line 295 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	296	267		brtst 4, __NXC_Label_1639, __zfmain
+0	295	270	#line 295 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	296	270		set __D0main, 60
+0	296	273	#line 296 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	297	273	#pragma macro 7
+0	297	273		setout __constVal2, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	15379	296	#line 15379 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	296	296	#line 296 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	296	296	#line 296 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	297	296	#line 297 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	298	296	#pragma macro 10
+0	298	296		neg __OnRev_Tmp, __constVal60
+0	298	299		setout __constVal1, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	15386	322	#line 15386 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	297	322	#line 297 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	297	322	#line 297 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	298	322		set __Wait_7qG2_ms_7qG2_000_inline_main, 200
+0	297	325	#line 297 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	7921	325	#line 7921 "NXCDefs.h"
+0	7922	325		wait 200
+0	7921	327	#line 7921 "NXCDefs.h"
+0	298	327	#line 298 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	300	327	#line 300 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	301	327		jmp __NXC_Label_1646
+0	300	329	#line 300 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	301	329		set __D0main, 50
+0	377	332	#line 377 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	378	332	#pragma macro 7
+0	378	332		setout __OUT_BC, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	15406	355	#line 15406 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	377	355	#line 377 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	377	355	#line 377 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	424	355	#line 424 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	425	355		jmp __NXC_Label_1617
+0	424	357	#line 424 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+0	425	357		exit -1, -1
+1	4885	0		setin __constVal1, __ResetSensorPort, 5
+1	4887	4		getin __ResetSensorTmp, __ResetSensorPort, 5
+1	4888	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
+1	4889	11		subret ____ResetSensorSubroutine_return
+2	5821	0	#pragma macro 25
+2	5821	0		acquire __CLSWMutex0
+2	5821	1		acquire __CLSWMutex1
+2	5821	2		acquire __CLSWMutex2
+2	5821	3		acquire __CLSWMutex3
+2	5821	4		mov __CLSWArgs0.Port, __RLSReadPort
+2	5821	6		mov __CLSWArgs0.ReturnLen, __RLSBytesCountVar
+2	5821	8		mov __CLSWArgs0.Buffer, __RLSReadBufVar
+2	5821	10		syscall 21, __CLSWArgs0
+2	5821	13		mov __RLSBResultVar, __CLSWArgs0.Result
+2	5821	15		release __CLSWMutex0
+2	5821	16		release __CLSWMutex1
+2	5821	17		release __CLSWMutex2
+2	5821	18		release __CLSWMutex3
+2	5821	19	#line 5821 "NXTDefs.h"
+2	5822	19		brtst 4, __RLSBReturnVar, __RLSBytesCountVar
+2	5823	22		arrinit __RLSReadBufVar, __constVal0, __RLSBytesCountVar
+2	5824	26		brtst 5, __RLSBErrorVar, __RLSBResultVar
+2	5825	29		set __RLSBIterationsVar, 4
+2	5827	32	#pragma macro 23
+2	5827	32		acquire __CLSCSMutex0
+2	5827	33		acquire __CLSCSMutex1
+2	5827	34		acquire __CLSCSMutex2
+2	5827	35		acquire __CLSCSMutex3
+2	5827	36		mov __CLSCSArgs0.Port, __RLSReadPort
+2	5827	38		syscall 23, __CLSCSArgs0
+2	5827	41		mov __RLSBytesCountVar, __CLSCSArgs0.BytesReady
+2	5827	43		mov __RLSBResultVar, __CLSCSArgs0.Result
+2	5827	45		release __CLSCSMutex0
+2	5827	46		release __CLSCSMutex1
+2	5827	47		release __CLSCSMutex2
+2	5827	48		release __CLSCSMutex3
+2	5827	49	#line 5827 "NXTDefs.h"
+2	5828	49		sub __RLSBIterationsVar, __RLSBIterationsVar, __constVal1
+2	5829	53		brtst 2, __RLSBErrorVar, __RLSBIterationsVar
+2	5830	56		brtst 0, __RLSBErrorVar, __RLSBResultVar
+2	5831	59		brtst 4, __RLSBReadyToReadVar, __RLSBResultVar
+2	5833	62		wait 15
+2	5834	64		jmp __RLSBDoCheckStatusVar
+2	5837	66	#pragma macro 25
+2	5837	66		acquire __CLSRMutex0
+2	5837	67		acquire __CLSRMutex1
+2	5837	68		acquire __CLSRMutex2
+2	5837	69		acquire __CLSRMutex3
+2	5837	70		mov __CLSRArgs0.Port, __RLSReadPort
+2	5837	72		mov __CLSRArgs0.BufferLen, __RLSBytesCountVar
+2	5837	74		syscall 22, __CLSRArgs0
+2	5837	77		mov __RLSReadBufVar, __CLSRArgs0.Buffer
+2	5837	79		mov __RLSBResultVar, __CLSRArgs0.Result
+2	5837	81		release __CLSRMutex0
+2	5837	82		release __CLSRMutex1
+2	5837	83		release __CLSRMutex2
+2	5837	84		release __CLSRMutex3
+2	5837	85	#line 5837 "NXTDefs.h"
+2	5838	85		brtst 5, __RLSBErrorVar, __RLSBResultVar
+2	5839	88		mov __RLSLastGoodReadVar, __RLSReadBufVar
+2	5840	90		jmp __RLSBDoneVar
+2	5842	92		mov __RLSReadBufVar, __RLSLastGoodReadVar
+2	5844	94		arrsize __RLSBytesCountVar, __RLSReadBufVar
+2	5846	97		subret ____ReadLSBytesVar_return
+3	245	0	#line 245 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+3	246	0		arrbuild ___HTSMUXsendCmd_7qG2_sendMsg_7qG2_000, __constVal16, __constVal32, ___HTSMUXsendCmd_7qG2_cmd_7qG2_000
+3	245	6	#line 245 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+3	245	6	#line 245 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+3	248	6	#line 248 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+3	249	6	#pragma macro 23
+3	249	6		acquire __CLSCSMutex0
+3	249	7		acquire __CLSCSMutex1
+3	249	8		acquire __CLSCSMutex2
+3	249	9		acquire __CLSCSMutex3
+3	249	10		mov __CLSCSArgs0.Port, ___HTSMUXsendCmd_7qG2_smux_7qG2_000
+3	249	12		syscall 23, __CLSCSArgs0
+3	249	15		mov __tmpsbyte_HTSMUXsendCmd, __CLSCSArgs0.BytesReady
+3	249	17		mov __D0_HTSMUXsendCmd, __CLSCSArgs0.Result
+3	249	20		release __CLSCSMutex0
+3	249	21		release __CLSCSMutex1
+3	249	22		release __CLSCSMutex2
+3	249	23		release __CLSCSMutex3
+3	9791	24	#line 9791 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+3	248	24	#line 248 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+3	249	24		mov __signed_stack_001_HTSMUXsendCmd, __D0_HTSMUXsendCmd
+3	248	26	#line 248 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+3	249	26		set __D0_HTSMUXsendCmd, 32
+3	248	29	#line 248 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+3	249	29		cmp 4, __zf_HTSMUXsendCmd, __signed_stack_001_HTSMUXsendCmd, __D0_HTSMUXsendCmd
+3	248	33	#line 248 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+3	249	33		mov __D0_HTSMUXsendCmd, __zf_HTSMUXsendCmd
+3	248	35	#line 248 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+3	249	35		brtst 4, __NXC_Label_605, __zf_HTSMUXsendCmd
+3	7927	38	#line 7927 "NXCDefs.h"
+3	7928	38		wait 1
+3	7927	40	#line 7927 "NXCDefs.h"
+3	249	40	#line 249 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+3	249	40	#line 249 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+3	250	40		jmp __NXC_Label_604
+3	249	42	#line 249 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+3	249	42	#line 249 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+3	250	42	#pragma macro 25
+3	250	42		acquire __CLSWMutex0
+3	250	43		acquire __CLSWMutex1
+3	250	44		acquire __CLSWMutex2
+3	250	45		acquire __CLSWMutex3
+3	250	46		mov __CLSWArgs0.Port, ___HTSMUXsendCmd_7qG2_smux_7qG2_000
+3	250	48		mov __CLSWArgs0.ReturnLen, __constVal0
+3	250	50		mov __CLSWArgs0.Buffer, ___HTSMUXsendCmd_7qG2_sendMsg_7qG2_000
+3	250	52		syscall 21, __CLSWArgs0
+3	250	55		mov __D0_HTSMUXsendCmd, __CLSWArgs0.Result
+3	250	58		release __CLSWMutex0
+3	250	59		release __CLSWMutex1
+3	250	60		release __CLSWMutex2
+3	250	61		release __CLSWMutex3
+3	9813	62	#line 9813 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+3	249	62	#line 249 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+3	249	62	#line 249 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+3	253	62	#line 253 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+3	254	62		mov __unsigned_stack_001_HTSMUXsendCmd, ___HTSMUXsendCmd_7qG2_cmd_7qG2_000
+3	253	64	#line 253 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+3	253	64	#line 253 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+3	254	64		set __D0_HTSMUXsendCmd, 1
+3	253	67	#line 253 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+3	254	67		cmp 4, __zf_HTSMUXsendCmd, __unsigned_stack_001_HTSMUXsendCmd, __D0_HTSMUXsendCmd
+3	253	71	#line 253 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+3	254	71		mov __D0_HTSMUXsendCmd, __zf_HTSMUXsendCmd
+3	254	73	#line 254 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+3	255	73		brtst 4, __NXC_Label_610, __zf_HTSMUXsendCmd
+3	254	76	#line 254 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+3	255	76		set __Wait_7qG2_ms_7qG2_000_inline__HTSMUXsendCmd, 500
+3	254	79	#line 254 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+3	7921	79	#line 7921 "NXCDefs.h"
+3	7922	79		wait 500
+3	7921	81	#line 7921 "NXCDefs.h"
+3	257	81	#line 257 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+3	257	81	#line 257 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+3	258	81		jmp __NXC_Label_613
+3	257	83	#line 257 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+3	258	83		mov __unsigned_stack_001_HTSMUXsendCmd, ___HTSMUXsendCmd_7qG2_cmd_7qG2_000
+3	257	85	#line 257 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+3	257	85	#line 257 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+3	258	85		set __D0_HTSMUXsendCmd, 0
+3	257	88	#line 257 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+3	258	88		cmp 4, __zf_HTSMUXsendCmd, __unsigned_stack_001_HTSMUXsendCmd, __D0_HTSMUXsendCmd
+3	257	92	#line 257 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+3	258	92		mov __D0_HTSMUXsendCmd, __zf_HTSMUXsendCmd
+3	258	94	#line 258 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+3	259	94		brtst 4, __NXC_Label_616, __zf_HTSMUXsendCmd
+3	258	97	#line 258 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+3	259	97		set __Wait_7qG2_ms_7qG2_000_inline__HTSMUXsendCmd, 50
+3	258	100	#line 258 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+3	7921	100	#line 7921 "NXCDefs.h"
+3	7922	100		wait 50
+3	7921	102	#line 7921 "NXCDefs.h"
+3	259	102	#line 259 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+3	262	102	#line 262 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+3	262	102	#line 262 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+3	262	102	#line 262 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+3	263	102		mov __DU0_HTSMUXsendCmd, ___HTSMUXsendCmd_7qG2_cmd_7qG2_000
+3	266	104		brcmp 4, __NXC_Label_622, __constVal0, __DU0_HTSMUXsendCmd
+3	267	108		brcmp 4, __NXC_Label_627, __constVal1, __DU0_HTSMUXsendCmd
+3	268	112		brcmp 4, __NXC_Label_632, __constVal2, __DU0_HTSMUXsendCmd
+3	269	116		jmp __NXC_Label_621
+3	264	118	#line 264 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+3	264	118	#line 264 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+3	265	118		mov __unsigned_stack_001_HTSMUXsendCmd, ___HTSMUXsendCmd_7qG2_smux_7qG2_000
+3	264	120	#line 264 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+3	265	120	#line 265 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+3	266	120		set __D0_HTSMUXsendCmd, 4
+3	265	123	#line 265 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+3	266	123		replace smuxStatus, smuxStatus, __unsigned_stack_001_HTSMUXsendCmd, __D0_HTSMUXsendCmd
+3	265	128	#line 265 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+3	266	128	#line 266 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+3	267	128		jmp __NXC_Label_621
+3	266	130	#line 266 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+3	267	130	#line 267 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+3	267	130	#line 267 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+3	268	130		mov __unsigned_stack_001_HTSMUXsendCmd, ___HTSMUXsendCmd_7qG2_smux_7qG2_000
+3	267	132	#line 267 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+3	268	132	#line 268 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+3	269	132		set __D0_HTSMUXsendCmd, 2
+3	268	135	#line 268 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+3	269	135		replace smuxStatus, smuxStatus, __unsigned_stack_001_HTSMUXsendCmd, __D0_HTSMUXsendCmd
+3	268	140	#line 268 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+3	269	140	#line 269 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+3	270	140		jmp __NXC_Label_621
+3	269	142	#line 269 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+3	270	142	#line 270 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+3	270	142	#line 270 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+3	271	142		mov __unsigned_stack_001_HTSMUXsendCmd, ___HTSMUXsendCmd_7qG2_smux_7qG2_000
+3	270	144	#line 270 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+3	271	144	#line 271 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+3	272	144		set __D0_HTSMUXsendCmd, 0
+3	271	147	#line 271 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+3	272	147		replace smuxStatus, smuxStatus, __unsigned_stack_001_HTSMUXsendCmd, __D0_HTSMUXsendCmd
+3	271	152	#line 271 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+3	272	152	#line 272 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+3	272	152	#line 272 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+3	274	152	#line 274 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+3	274	152	#line 274 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+3	275	152	#pragma macro 23
+3	275	152		acquire __CLSCSMutex0
+3	275	153		acquire __CLSCSMutex1
+3	275	154		acquire __CLSCSMutex2
+3	275	155		acquire __CLSCSMutex3
+3	275	156		mov __CLSCSArgs0.Port, ___HTSMUXsendCmd_7qG2_smux_7qG2_000
+3	275	158		syscall 23, __CLSCSArgs0
+3	275	161		mov __tmpsbyte_HTSMUXsendCmd, __CLSCSArgs0.BytesReady
+3	275	163		mov __D0_HTSMUXsendCmd, __CLSCSArgs0.Result
+3	275	166		release __CLSCSMutex0
+3	275	167		release __CLSCSMutex1
+3	275	168		release __CLSCSMutex2
+3	275	169		release __CLSCSMutex3
+3	9941	170	#line 9941 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+3	274	170	#line 274 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+3	275	170		mov __signed_stack_001_HTSMUXsendCmd, __D0_HTSMUXsendCmd
+3	274	172	#line 274 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+3	275	172		set __D0_HTSMUXsendCmd, 32
+3	274	175	#line 274 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+3	275	175		cmp 4, __zf_HTSMUXsendCmd, __signed_stack_001_HTSMUXsendCmd, __D0_HTSMUXsendCmd
+3	274	179	#line 274 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+3	275	179		mov __D0_HTSMUXsendCmd, __zf_HTSMUXsendCmd
+3	274	181	#line 274 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+3	275	181		brtst 4, __NXC_Label_640, __zf_HTSMUXsendCmd
+3	274	184	#line 274 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+3	275	184		mov __signed_stack_001_HTSMUXsendCmd, __D0_HTSMUXsendCmd
+3	274	186	#line 274 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+3	275	186	#pragma macro 23
+3	275	186		acquire __CLSCSMutex0
+3	275	187		acquire __CLSCSMutex1
+3	275	188		acquire __CLSCSMutex2
+3	275	189		acquire __CLSCSMutex3
+3	275	190		mov __CLSCSArgs0.Port, ___HTSMUXsendCmd_7qG2_smux_7qG2_000
+3	275	192		syscall 23, __CLSCSArgs0
+3	275	195		mov __tmpsbyte_HTSMUXsendCmd, __CLSCSArgs0.BytesReady
+3	275	197		mov __D0_HTSMUXsendCmd, __CLSCSArgs0.Result
+3	275	200		release __CLSCSMutex0
+3	275	201		release __CLSCSMutex1
+3	275	202		release __CLSCSMutex2
+3	275	203		release __CLSCSMutex3
+3	9957	204	#line 9957 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+3	274	204	#line 274 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+3	275	204		mov __signed_stack_002_HTSMUXsendCmd, __D0_HTSMUXsendCmd
+3	274	206	#line 274 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+3	275	206		set __D0_HTSMUXsendCmd, 0
+3	274	209	#line 274 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+3	275	209		cmp 5, __zf_HTSMUXsendCmd, __signed_stack_002_HTSMUXsendCmd, __D0_HTSMUXsendCmd
+3	274	213	#line 274 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+3	274	213	#line 274 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+3	275	213		and __D0_HTSMUXsendCmd, __signed_stack_001_HTSMUXsendCmd, __zf_HTSMUXsendCmd
+3	274	217	#line 274 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+3	275	217		tst 5, __zf_HTSMUXsendCmd, __D0_HTSMUXsendCmd
+3	274	220	#line 274 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+3	275	220		brtst 4, __NXC_Label_638, __zf_HTSMUXsendCmd
+3	7927	223	#line 7927 "NXCDefs.h"
+3	7928	223		wait 1
+3	7927	225	#line 7927 "NXCDefs.h"
+3	275	225	#line 275 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+3	275	225	#line 275 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+3	276	225		jmp __NXC_Label_637
+3	275	227	#line 275 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+3	275	227	#line 275 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+3	276	227	#pragma macro 23
+3	276	227		acquire __CLSCSMutex0
+3	276	228		acquire __CLSCSMutex1
+3	276	229		acquire __CLSCSMutex2
+3	276	230		acquire __CLSCSMutex3
+3	276	231		mov __CLSCSArgs0.Port, ___HTSMUXsendCmd_7qG2_smux_7qG2_000
+3	276	233		syscall 23, __CLSCSArgs0
+3	276	236		mov __tmpsbyte_HTSMUXsendCmd, __CLSCSArgs0.BytesReady
+3	276	238		mov __D0_HTSMUXsendCmd, __CLSCSArgs0.Result
+3	276	241		release __CLSCSMutex0
+3	276	242		release __CLSCSMutex1
+3	276	243		release __CLSCSMutex2
+3	276	244		release __CLSCSMutex3
+3	9985	245	#line 9985 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+3	275	245	#line 275 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+3	276	245		mov __signed_stack_001_HTSMUXsendCmd, __D0_HTSMUXsendCmd
+3	275	247	#line 275 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+3	276	247		set __D0_HTSMUXsendCmd, 0
+3	275	250	#line 275 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+3	276	250		cmp 4, __zf_HTSMUXsendCmd, __signed_stack_001_HTSMUXsendCmd, __D0_HTSMUXsendCmd
+3	275	254	#line 275 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+3	276	254		mov __DU0_HTSMUXsendCmd, __zf_HTSMUXsendCmd
+3	276	256	#line 276 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+3	276	256	#line 276 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+3	277	256		subret ___HTSMUXsendCmd_return
+3	276	258	#line 276 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+3	276	258	#line 276 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+3	288	258	#line 288 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+3	289	258		subret ___HTSMUXsendCmd_return
+4	324	0	#line 324 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	325	0		arrinit __HTSMUXreadAnalogue_7qG2_sendMsg_7qG2_000, __constVal0, __constVal2
+4	325	4	#line 325 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	326	4		arrinit __HTSMUXreadAnalogue_7qG2_readMsg_7qG2_000, __constVal0, __constVal2
+4	328	8	#line 328 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	329	8		set __HTSMUXreadAnalogue_7qG2_count_7qG2_000, 2
+4	328	11	#line 328 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	328	11	#line 328 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	328	11	#line 328 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	329	11	#line 329 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	329	11	#line 329 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	330	11		div __HTSMUXreadAnalogue_7qG2_smux_7qG2_000, __HTSMUXreadAnalogue_7qG2_muxport_7qG2_000, __constVal4
+4	329	15	#line 329 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	329	15	#line 329 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	329	15	#line 329 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	331	15	#line 331 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	331	15	#line 331 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	332	15		mod __HTSMUXreadAnalogue_7qG2_channel_7qG2_000, __HTSMUXreadAnalogue_7qG2_muxport_7qG2_000, __constVal4
+4	331	19	#line 331 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	331	19	#line 331 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	332	19		mov __unsigned_stack_001HTSMUXreadAnalogue, __HTSMUXreadAnalogue_7qG2_smux_7qG2_000
+4	331	21	#line 331 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	331	21	#line 331 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	332	21		index __ArrHelper__HTSMUXreadAnalogue_98_0, smuxStatus, __unsigned_stack_001HTSMUXreadAnalogue
+4	331	25	#line 331 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	332	25		mov __unsigned_stack_001HTSMUXreadAnalogue, __ArrHelper__HTSMUXreadAnalogue_98_0
+4	331	27	#line 331 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	331	27	#line 331 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	332	27		set __D0HTSMUXreadAnalogue, 2
+4	331	30	#line 331 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	332	30		cmp 4, __zfHTSMUXreadAnalogue, __unsigned_stack_001HTSMUXreadAnalogue, __D0HTSMUXreadAnalogue
+4	331	34	#line 331 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	332	34		mov __D0HTSMUXreadAnalogue, __zfHTSMUXreadAnalogue
+4	332	36	#line 332 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	333	36		brtst 4, __NXC_Label_701, __zfHTSMUXreadAnalogue
+4	334	39	#line 334 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	335	39		set __D0HTSMUXreadAnalogue, 0
+4	334	42	#line 334 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	335	42		subret __HTSMUXreadAnalogue_return
+4	334	44	#line 334 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	334	44	#line 334 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	335	44		jmp __NXC_Label_704
+4	334	46	#line 334 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	335	46		mov __unsigned_stack_001HTSMUXreadAnalogue, __HTSMUXreadAnalogue_7qG2_smux_7qG2_000
+4	334	48	#line 334 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	334	48	#line 334 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	335	48		index __ArrHelper__HTSMUXreadAnalogue_98_0, smuxStatus, __unsigned_stack_001HTSMUXreadAnalogue
+4	334	52	#line 334 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	335	52		mov __unsigned_stack_001HTSMUXreadAnalogue, __ArrHelper__HTSMUXreadAnalogue_98_0
+4	334	54	#line 334 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	334	54	#line 334 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	335	54		set __D0HTSMUXreadAnalogue, 0
+4	334	57	#line 334 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	335	57		cmp 5, __zfHTSMUXreadAnalogue, __unsigned_stack_001HTSMUXreadAnalogue, __D0HTSMUXreadAnalogue
+4	334	61	#line 334 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	335	61		mov __D0HTSMUXreadAnalogue, __zfHTSMUXreadAnalogue
+4	335	63	#line 335 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	336	63		brtst 4, __NXC_Label_709, __zfHTSMUXreadAnalogue
+4	335	66	#line 335 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	336	66		mov ___HTSMUXsendCmd_7qG2_smux_7qG2_000, __HTSMUXreadAnalogue_7qG2_smux_7qG2_000
+4	335	68	#line 335 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	335	68	#line 335 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	336	68		set ___HTSMUXsendCmd_7qG2_cmd_7qG2_000, 2
+4	335	71	#line 335 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	336	71	#line 336 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	337	71		subcall _HTSMUXsendCmd, ___HTSMUXsendCmd_return
+4	336	73	#line 336 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	336	73	#line 336 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	337	73		not __DU0HTSMUXreadAnalogue, __DU0_HTSMUXsendCmd
+4	336	76	#line 336 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	337	76		tst 5, __zfHTSMUXreadAnalogue, __DU0HTSMUXreadAnalogue
+4	336	79	#line 336 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	337	79		brtst 4, __NXC_Label_716, __zfHTSMUXreadAnalogue
+4	337	82	#line 337 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	338	82		set __D0HTSMUXreadAnalogue, 0
+4	337	85	#line 337 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	338	85		subret __HTSMUXreadAnalogue_return
+4	337	87	#line 337 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	339	87	#line 339 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	339	87	#line 339 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	339	87	#line 339 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	339	87	#line 339 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	340	87		set __signed_stack_001HTSMUXreadAnalogue, 0
+4	339	90	#line 339 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	341	90	#line 341 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	342	90		set __D0HTSMUXreadAnalogue, 16
+4	341	93	#line 341 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	342	93		replace __HTSMUXreadAnalogue_7qG2_sendMsg_7qG2_000, __HTSMUXreadAnalogue_7qG2_sendMsg_7qG2_000, __signed_stack_001HTSMUXreadAnalogue, __D0HTSMUXreadAnalogue
+4	341	98	#line 341 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	341	98	#line 341 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	342	98		set __signed_stack_001HTSMUXreadAnalogue, 1
+4	341	101	#line 341 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	341	101	#line 341 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	342	101		set __signed_stack_002HTSMUXreadAnalogue, 54
+4	341	104	#line 341 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	341	104	#line 341 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	341	104	#line 341 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	341	104	#line 341 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	341	104	#line 341 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	342	104		mul __D0HTSMUXreadAnalogue, __HTSMUXreadAnalogue_7qG2_channel_7qG2_000, __constVal2
+4	344	108	#line 344 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	345	108		add __D0HTSMUXreadAnalogue, __signed_stack_002HTSMUXreadAnalogue, __D0HTSMUXreadAnalogue
+4	344	112	#line 344 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	345	112		replace __HTSMUXreadAnalogue_7qG2_sendMsg_7qG2_000, __HTSMUXreadAnalogue_7qG2_sendMsg_7qG2_000, __signed_stack_001HTSMUXreadAnalogue, __D0HTSMUXreadAnalogue
+4	344	117	#line 344 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	344	117	#line 344 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	345	117	#pragma macro 23
+4	345	117		acquire __CLSCSMutex0
+4	345	118		acquire __CLSCSMutex1
+4	345	119		acquire __CLSCSMutex2
+4	345	120		acquire __CLSCSMutex3
+4	345	121		mov __CLSCSArgs0.Port, __HTSMUXreadAnalogue_7qG2_smux_7qG2_000
+4	345	123		syscall 23, __CLSCSArgs0
+4	345	126		mov __D0HTSMUXreadAnalogue, __CLSCSArgs0.Result
+4	345	129		release __CLSCSMutex0
+4	345	130		release __CLSCSMutex1
+4	345	131		release __CLSCSMutex2
+4	345	132		release __CLSCSMutex3
+4	10419	133	#line 10419 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	344	133	#line 344 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	345	133		mov __signed_stack_001HTSMUXreadAnalogue, __D0HTSMUXreadAnalogue
+4	344	135	#line 344 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	345	135		set __D0HTSMUXreadAnalogue, 32
+4	344	138	#line 344 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	345	138		cmp 4, __zfHTSMUXreadAnalogue, __signed_stack_001HTSMUXreadAnalogue, __D0HTSMUXreadAnalogue
+4	344	142	#line 344 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	345	142		mov __D0HTSMUXreadAnalogue, __zfHTSMUXreadAnalogue
+4	344	144	#line 344 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	345	144		brtst 4, __NXC_Label_730, __zfHTSMUXreadAnalogue
+4	7927	147	#line 7927 "NXCDefs.h"
+4	7928	147		wait 1
+4	7927	149	#line 7927 "NXCDefs.h"
+4	345	149	#line 345 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	345	149	#line 345 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	346	149		jmp __NXC_Label_729
+4	345	151	#line 345 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	345	151	#line 345 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	346	151	#pragma macro 28
+4	346	151		acquire __RLSBmutex0
+4	346	152		acquire __RLSBmutex1
+4	346	153		acquire __RLSBmutex2
+4	346	154		acquire __RLSBmutex3
+4	346	155		mov __RLSReadPort, __HTSMUXreadAnalogue_7qG2_smux_7qG2_000
+4	346	157		mov __RLSReadBufVar, __HTSMUXreadAnalogue_7qG2_sendMsg_7qG2_000
+4	346	159		mov __RLSBytesCountVar, __HTSMUXreadAnalogue_7qG2_count_7qG2_000
+4	346	161		subcall __ReadLSBytesVar, ____ReadLSBytesVar_return
+4	346	163		tst 4, __D0HTSMUXreadAnalogue, __RLSBResultVar
+4	346	166		mov __HTSMUXreadAnalogue_7qG2_count_7qG2_000, __RLSBytesCountVar
+4	346	168		mov __HTSMUXreadAnalogue_7qG2_readMsg_7qG2_000, __RLSReadBufVar
+4	346	170		release __RLSBmutex0
+4	346	171		release __RLSBmutex1
+4	346	172		release __RLSBmutex2
+4	346	173		release __RLSBmutex3
+4	10441	174	#line 10441 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	346	174	#line 346 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	347	174		tst 5, __zfHTSMUXreadAnalogue, __D0HTSMUXreadAnalogue
+4	346	177	#line 346 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	347	177		brtst 4, __NXC_Label_735, __zfHTSMUXreadAnalogue
+4	346	180	#line 346 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	347	180		set __signed_stack_001HTSMUXreadAnalogue, 0
+4	346	183	#line 346 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	346	183	#line 346 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	347	183		index __ArrHelper__HTSMUXreadAnalogue_98_0, __HTSMUXreadAnalogue_7qG2_readMsg_7qG2_000, __signed_stack_001HTSMUXreadAnalogue
+4	346	187	#line 346 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	346	187	#line 346 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	346	187	#line 346 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	346	187	#line 346 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	347	187		and __signed_stack_001HTSMUXreadAnalogue, __ArrHelper__HTSMUXreadAnalogue_98_0, __constVal255
+4	346	191	#line 346 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	346	191	#line 346 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	346	191	#line 346 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	347	191		mul __signed_stack_001HTSMUXreadAnalogue, __signed_stack_001HTSMUXreadAnalogue, __constVal4
+4	346	195	#line 346 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	346	195	#line 346 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	347	195		set __signed_stack_002HTSMUXreadAnalogue, 1
+4	346	198	#line 346 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	346	198	#line 346 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	347	198		index __ArrHelper__HTSMUXreadAnalogue_98_0, __HTSMUXreadAnalogue_7qG2_readMsg_7qG2_000, __signed_stack_002HTSMUXreadAnalogue
+4	346	202	#line 346 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	346	202	#line 346 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	346	202	#line 346 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	346	202	#line 346 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	347	202		and __D0HTSMUXreadAnalogue, __ArrHelper__HTSMUXreadAnalogue_98_0, __constVal255
+4	347	206	#line 347 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	348	206		add __D0HTSMUXreadAnalogue, __signed_stack_001HTSMUXreadAnalogue, __D0HTSMUXreadAnalogue
+4	347	210	#line 347 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	348	210		subret __HTSMUXreadAnalogue_return
+4	347	212	#line 347 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	348	212	#line 348 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	349	212		jmp __NXC_Label_748
+4	349	214	#line 349 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	350	214		set __D0HTSMUXreadAnalogue, 0
+4	349	217	#line 349 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	350	217		subret __HTSMUXreadAnalogue_return
+4	349	219	#line 349 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	349	219	#line 349 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	367	219	#line 367 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+4	368	219		subret __HTSMUXreadAnalogue_return
+5	396	0	#line 396 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	396	0	#line 396 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	399	0	#line 399 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	400	0		set __HTSMUXscanPorts_7qG2_size_7qG2_000, 1
+5	399	3	#line 399 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	399	3	#line 399 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	400	3		arrinit __HTSMUXscanPorts_7qG2_sendMsg_7qG2_000, __constVal0, __constVal2
+5	399	7	#line 399 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	399	7	#line 399 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	402	7	#line 402 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	403	7		mov __unsigned_stack_001HTSMUXscanPorts, __HTSMUXscanPorts_7qG2_smux_7qG2_000
+5	402	9	#line 402 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	402	9	#line 402 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	403	9		index __ArrHelper__HTSMUXscanPorts_98_0, smuxStatus, __unsigned_stack_001HTSMUXscanPorts
+5	402	13	#line 402 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	403	13		mov __unsigned_stack_001HTSMUXscanPorts, __ArrHelper__HTSMUXscanPorts_98_0
+5	402	15	#line 402 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	403	15	#line 403 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	404	15		set __D0HTSMUXscanPorts, 2
+5	403	18	#line 403 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	404	18		cmp 4, __zfHTSMUXscanPorts, __unsigned_stack_001HTSMUXscanPorts, __D0HTSMUXscanPorts
+5	403	22	#line 403 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	404	22		mov __D0HTSMUXscanPorts, __zfHTSMUXscanPorts
+5	403	24	#line 403 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	404	24		brtst 4, __NXC_Label_775, __zfHTSMUXscanPorts
+5	406	27	#line 406 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	407	27		set __DU0HTSMUXscanPorts, 0
+5	406	30	#line 406 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	406	30	#line 406 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	407	30		subret __HTSMUXscanPorts_return
+5	406	32	#line 406 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	406	32	#line 406 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	406	32	#line 406 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	407	32		mov ___HTSMUXsendCmd_7qG2_smux_7qG2_000, __HTSMUXscanPorts_7qG2_smux_7qG2_000
+5	406	34	#line 406 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	406	34	#line 406 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	407	34		set ___HTSMUXsendCmd_7qG2_cmd_7qG2_000, 0
+5	406	37	#line 406 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	407	37	#line 407 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	408	37		subcall _HTSMUXsendCmd, ___HTSMUXsendCmd_return
+5	407	39	#line 407 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	407	39	#line 407 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	408	39		not __DU0HTSMUXscanPorts, __DU0_HTSMUXsendCmd
+5	407	42	#line 407 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	408	42		tst 5, __zfHTSMUXscanPorts, __DU0HTSMUXscanPorts
+5	407	45	#line 407 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	408	45		brtst 4, __NXC_Label_784, __zfHTSMUXscanPorts
+5	410	48	#line 410 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	411	48		set __DU0HTSMUXscanPorts, 0
+5	410	51	#line 410 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	410	51	#line 410 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	411	51		subret __HTSMUXscanPorts_return
+5	410	53	#line 410 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	410	53	#line 410 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	410	53	#line 410 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	411	53		mov ___HTSMUXsendCmd_7qG2_smux_7qG2_000, __HTSMUXscanPorts_7qG2_smux_7qG2_000
+5	410	55	#line 410 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	410	55	#line 410 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	411	55		set ___HTSMUXsendCmd_7qG2_cmd_7qG2_000, 1
+5	410	58	#line 410 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	411	58	#line 411 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	412	58		subcall _HTSMUXsendCmd, ___HTSMUXsendCmd_return
+5	411	60	#line 411 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	411	60	#line 411 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	412	60		not __DU0HTSMUXscanPorts, __DU0_HTSMUXsendCmd
+5	411	63	#line 411 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	412	63		tst 5, __zfHTSMUXscanPorts, __DU0HTSMUXscanPorts
+5	411	66	#line 411 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	412	66		brtst 4, __NXC_Label_793, __zfHTSMUXscanPorts
+5	412	69	#line 412 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	413	69		set __DU0HTSMUXscanPorts, 0
+5	412	72	#line 412 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	412	72	#line 412 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	413	72		subret __HTSMUXscanPorts_return
+5	412	74	#line 412 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	412	74	#line 412 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	412	74	#line 412 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	412	74	#line 412 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	7921	74	#line 7921 "NXCDefs.h"
+5	7922	74		wait 500
+5	7921	76	#line 7921 "NXCDefs.h"
+5	415	76	#line 415 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	415	76	#line 415 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	416	76		mov __unsigned_stack_001HTSMUXscanPorts, __HTSMUXscanPorts_7qG2_smux_7qG2_000
+5	415	78	#line 415 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	418	78	#line 418 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	419	78		set __D0HTSMUXscanPorts, 4
+5	418	81	#line 418 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	419	81		replace smuxStatus, smuxStatus, __unsigned_stack_001HTSMUXscanPorts, __D0HTSMUXscanPorts
+5	418	86	#line 418 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	418	86	#line 418 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	419	86		set __HTSMUXscanPorts_7qG2_i_7qG2_001, 0
+5	418	89	#line 418 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	418	89	#line 418 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	419	89		mov __signed_stack_001HTSMUXscanPorts, __HTSMUXscanPorts_7qG2_i_7qG2_001
+5	418	91	#line 418 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	418	91	#line 418 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	419	91		set __D0HTSMUXscanPorts, 4
+5	418	94	#line 418 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	419	94		cmp 0, __zfHTSMUXscanPorts, __signed_stack_001HTSMUXscanPorts, __D0HTSMUXscanPorts
+5	418	98	#line 418 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	419	98		mov __D0HTSMUXscanPorts, __zfHTSMUXscanPorts
+5	418	100	#line 418 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	419	100		brtst 4, __NXC_Label_803, __zfHTSMUXscanPorts
+5	418	103	#line 418 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	419	103		jmp __NXC_Label_804
+5	418	105	#line 418 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	419	105		add __HTSMUXscanPorts_7qG2_i_7qG2_001, __HTSMUXscanPorts_7qG2_i_7qG2_001, __constVal1
+5	420	109	#line 420 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	421	109		jmp __NXC_Label_802
+5	420	111	#line 420 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	421	111	#pragma macro 23
+5	421	111		acquire __CLSCSMutex0
+5	421	112		acquire __CLSCSMutex1
+5	421	113		acquire __CLSCSMutex2
+5	421	114		acquire __CLSCSMutex3
+5	421	115		mov __CLSCSArgs0.Port, __HTSMUXscanPorts_7qG2_smux_7qG2_000
+5	421	117		syscall 23, __CLSCSArgs0
+5	421	120		mov __D0HTSMUXscanPorts, __CLSCSArgs0.Result
+5	421	123		release __CLSCSMutex0
+5	421	124		release __CLSCSMutex1
+5	421	125		release __CLSCSMutex2
+5	421	126		release __CLSCSMutex3
+5	10810	127	#line 10810 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	420	127	#line 420 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	421	127		mov __signed_stack_001HTSMUXscanPorts, __D0HTSMUXscanPorts
+5	420	129	#line 420 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	421	129		set __D0HTSMUXscanPorts, 32
+5	420	132	#line 420 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	421	132		cmp 4, __zfHTSMUXscanPorts, __signed_stack_001HTSMUXscanPorts, __D0HTSMUXscanPorts
+5	420	136	#line 420 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	421	136		mov __D0HTSMUXscanPorts, __zfHTSMUXscanPorts
+5	420	138	#line 420 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	421	138		brtst 4, __NXC_Label_811, __zfHTSMUXscanPorts
+5	7927	141	#line 7927 "NXCDefs.h"
+5	7928	141		wait 1
+5	7927	143	#line 7927 "NXCDefs.h"
+5	421	143	#line 421 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	421	143	#line 421 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	422	143		jmp __NXC_Label_810
+5	421	145	#line 421 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	421	145	#line 421 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	422	145		set __signed_stack_001HTSMUXscanPorts, 0
+5	421	148	#line 421 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	422	148	#line 422 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	423	148		set __D0HTSMUXscanPorts, 16
+5	422	151	#line 422 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	423	151		replace __HTSMUXscanPorts_7qG2_sendMsg_7qG2_000, __HTSMUXscanPorts_7qG2_sendMsg_7qG2_000, __signed_stack_001HTSMUXscanPorts, __D0HTSMUXscanPorts
+5	422	156	#line 422 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	422	156	#line 422 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	423	156		set __signed_stack_001HTSMUXscanPorts, 1
+5	422	159	#line 422 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	422	159	#line 422 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	422	159	#line 422 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	422	159	#line 422 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	422	159	#line 422 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	423	159		add __signed_stack_002HTSMUXscanPorts, __constVal34, __constVal1
+5	422	163	#line 422 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	422	163	#line 422 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	422	163	#line 422 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	422	163	#line 422 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	422	163	#line 422 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	423	163		mul __D0HTSMUXscanPorts, __constVal5, __HTSMUXscanPorts_7qG2_i_7qG2_001
+5	424	167	#line 424 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	425	167		add __D0HTSMUXscanPorts, __signed_stack_002HTSMUXscanPorts, __D0HTSMUXscanPorts
+5	424	171	#line 424 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	425	171		replace __HTSMUXscanPorts_7qG2_sendMsg_7qG2_000, __HTSMUXscanPorts_7qG2_sendMsg_7qG2_000, __signed_stack_001HTSMUXscanPorts, __D0HTSMUXscanPorts
+5	424	176	#line 424 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	424	176	#line 424 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	425	176	#pragma macro 28
+5	425	176		acquire __RLSBmutex0
+5	425	177		acquire __RLSBmutex1
+5	425	178		acquire __RLSBmutex2
+5	425	179		acquire __RLSBmutex3
+5	425	180		mov __RLSReadPort, __HTSMUXscanPorts_7qG2_smux_7qG2_000
+5	425	182		mov __RLSReadBufVar, __HTSMUXscanPorts_7qG2_sendMsg_7qG2_000
+5	425	184		mov __RLSBytesCountVar, __HTSMUXscanPorts_7qG2_size_7qG2_000
+5	425	186		subcall __ReadLSBytesVar, ____ReadLSBytesVar_return
+5	425	188		tst 4, __D0HTSMUXscanPorts, __RLSBResultVar
+5	425	191		mov __HTSMUXscanPorts_7qG2_size_7qG2_000, __RLSBytesCountVar
+5	425	193		mov __HTSMUXscanPorts_7qG2_readMsg_7qG2_000, __RLSReadBufVar
+5	425	195		release __RLSBmutex0
+5	425	196		release __RLSBmutex1
+5	425	197		release __RLSBmutex2
+5	425	198		release __RLSBmutex3
+5	10878	199	#line 10878 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	425	199	#line 425 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	426	199		tst 5, __zfHTSMUXscanPorts, __D0HTSMUXscanPorts
+5	425	202	#line 425 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	426	202		brtst 4, __NXC_Label_826, __zfHTSMUXscanPorts
+5	425	205	#line 425 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	425	205	#line 425 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	425	205	#line 425 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	425	205	#line 425 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	426	205		mul __signed_stack_001HTSMUXscanPorts, __HTSMUXscanPorts_7qG2_smux_7qG2_000, __constVal4
+5	425	209	#line 425 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	425	209	#line 425 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	425	209	#line 425 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	426	209		add __signed_stack_001HTSMUXscanPorts, __signed_stack_001HTSMUXscanPorts, __HTSMUXscanPorts_7qG2_i_7qG2_001
+5	425	213	#line 425 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	425	213	#line 425 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	426	213		set __signed_stack_002HTSMUXscanPorts, 0
+5	425	216	#line 425 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	425	216	#line 425 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	426	216		index __ArrHelper__HTSMUXscanPorts_98_0, __HTSMUXscanPorts_7qG2_readMsg_7qG2_000, __signed_stack_002HTSMUXscanPorts
+5	425	220	#line 425 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	426	220		mov __DU0HTSMUXscanPorts, __ArrHelper__HTSMUXscanPorts_98_0
+5	426	222	#line 426 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	427	222		replace smuxSensorTypes, smuxSensorTypes, __signed_stack_001HTSMUXscanPorts, __DU0HTSMUXscanPorts
+5	426	227	#line 426 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	427	227	#line 427 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	428	227		jmp __NXC_Label_833
+5	427	229	#line 427 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	427	229	#line 427 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	427	229	#line 427 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	427	229	#line 427 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	428	229		mul __signed_stack_001HTSMUXscanPorts, __HTSMUXscanPorts_7qG2_smux_7qG2_000, __constVal4
+5	427	233	#line 427 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	427	233	#line 427 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	427	233	#line 427 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	428	233		add __signed_stack_001HTSMUXscanPorts, __signed_stack_001HTSMUXscanPorts, __HTSMUXscanPorts_7qG2_i_7qG2_001
+5	427	237	#line 427 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	428	237	#line 428 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	429	237		set __D0HTSMUXscanPorts, 255
+5	428	240	#line 428 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	429	240		replace smuxSensorTypes, smuxSensorTypes, __signed_stack_001HTSMUXscanPorts, __D0HTSMUXscanPorts
+5	428	245	#line 428 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	430	245	#line 430 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	430	245	#line 430 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	431	245		jmp __NXC_Label_805
+5	430	247	#line 430 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	431	247	#line 431 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	432	247		set __DU0HTSMUXscanPorts, 1
+5	431	250	#line 431 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	431	250	#line 431 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	432	250		subret __HTSMUXscanPorts_return
+5	431	252	#line 431 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	447	252	#line 447 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+5	448	252		subret __HTSMUXscanPorts_return
+6	449	0	#line 449 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	449	0	#line 449 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	450	0	#line 450 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	450	0	#line 450 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	451	0		div ___HTSMUXsetMode_7qG2_smux_7qG2_000, ___HTSMUXsetMode_7qG2_muxport_7qG2_000, __constVal4
+6	450	4	#line 450 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	450	4	#line 450 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	450	4	#line 450 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	452	4	#line 452 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	452	4	#line 452 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	453	4		mod ___HTSMUXsetMode_7qG2_channel_7qG2_000, ___HTSMUXsetMode_7qG2_muxport_7qG2_000, __constVal4
+6	452	8	#line 452 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	453	8	#line 453 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	453	8	#line 453 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	453	8	#line 453 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	453	8	#line 453 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	454	8		add __signed_stack_001_HTSMUXsetMode, __constVal34, __constVal0
+6	453	12	#line 453 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	453	12	#line 453 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	453	12	#line 453 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	453	12	#line 453 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	453	12	#line 453 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	454	12		mul __D0_HTSMUXsetMode, __constVal5, ___HTSMUXsetMode_7qG2_channel_7qG2_000
+6	455	16	#line 455 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	456	16		add ___HTSMUXsetMode_7qG2_regaddr_7qG2_000, __signed_stack_001_HTSMUXsetMode, __D0_HTSMUXsetMode
+6	455	20	#line 455 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	455	20	#line 455 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	456	20		arrbuild ___HTSMUXsetMode_7qG2_sendMsg_7qG2_000, __constVal16, ___HTSMUXsetMode_7qG2_regaddr_7qG2_000, ___HTSMUXsetMode_7qG2_mode_7qG2_000
+6	455	26	#line 455 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	455	26	#line 455 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	458	26	#line 458 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	459	26		mov __unsigned_stack_001_HTSMUXsetMode, ___HTSMUXsetMode_7qG2_smux_7qG2_000
+6	458	28	#line 458 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	458	28	#line 458 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	459	28		index __ArrHelper___HTSMUXsetMode_98_0, smuxStatus, __unsigned_stack_001_HTSMUXsetMode
+6	458	32	#line 458 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	459	32		mov __unsigned_stack_001_HTSMUXsetMode, __ArrHelper___HTSMUXsetMode_98_0
+6	458	34	#line 458 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	458	34	#line 458 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	459	34		set __D0_HTSMUXsetMode, 2
+6	458	37	#line 458 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	459	37		cmp 4, __zf_HTSMUXsetMode, __unsigned_stack_001_HTSMUXsetMode, __D0_HTSMUXsetMode
+6	458	41	#line 458 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	459	41		mov __D0_HTSMUXsetMode, __zf_HTSMUXsetMode
+6	459	43	#line 459 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	460	43		brtst 4, __NXC_Label_852, __zf_HTSMUXsetMode
+6	460	46	#line 460 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	461	46		set __DU0_HTSMUXsetMode, 0
+6	460	49	#line 460 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	460	49	#line 460 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	461	49		subret ___HTSMUXsetMode_return
+6	460	51	#line 460 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	460	51	#line 460 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	461	51		jmp __NXC_Label_855
+6	460	53	#line 460 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	461	53		mov __unsigned_stack_001_HTSMUXsetMode, ___HTSMUXsetMode_7qG2_smux_7qG2_000
+6	460	55	#line 460 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	460	55	#line 460 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	461	55		index __ArrHelper___HTSMUXsetMode_98_0, smuxStatus, __unsigned_stack_001_HTSMUXsetMode
+6	460	59	#line 460 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	461	59		mov __unsigned_stack_001_HTSMUXsetMode, __ArrHelper___HTSMUXsetMode_98_0
+6	460	61	#line 460 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	460	61	#line 460 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	461	61		set __D0_HTSMUXsetMode, 4
+6	460	64	#line 460 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	461	64		cmp 5, __zf_HTSMUXsetMode, __unsigned_stack_001_HTSMUXsetMode, __D0_HTSMUXsetMode
+6	460	68	#line 460 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	461	68		mov __D0_HTSMUXsetMode, __zf_HTSMUXsetMode
+6	462	70	#line 462 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	463	70		brtst 4, __NXC_Label_860, __zf_HTSMUXsetMode
+6	462	73	#line 462 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	463	73		mov ___HTSMUXsendCmd_7qG2_smux_7qG2_000, ___HTSMUXsetMode_7qG2_smux_7qG2_000
+6	462	75	#line 462 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	462	75	#line 462 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	463	75		set ___HTSMUXsendCmd_7qG2_cmd_7qG2_000, 0
+6	462	78	#line 462 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	463	78	#line 463 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	464	78		subcall _HTSMUXsendCmd, ___HTSMUXsendCmd_return
+6	463	80	#line 463 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	463	80	#line 463 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	464	80		not __DU0_HTSMUXsetMode, __DU0_HTSMUXsendCmd
+6	463	83	#line 463 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	464	83		tst 5, __zf_HTSMUXsetMode, __DU0_HTSMUXsetMode
+6	463	86	#line 463 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	464	86		brtst 4, __NXC_Label_867, __zf_HTSMUXsetMode
+6	464	89	#line 464 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	465	89		set __DU0_HTSMUXsetMode, 0
+6	464	92	#line 464 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	464	92	#line 464 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	465	92		subret ___HTSMUXsetMode_return
+6	464	94	#line 464 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	467	94	#line 467 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	467	94	#line 467 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	467	94	#line 467 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	467	94	#line 467 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	468	94	#pragma macro 23
+6	468	94		acquire __CLSCSMutex0
+6	468	95		acquire __CLSCSMutex1
+6	468	96		acquire __CLSCSMutex2
+6	468	97		acquire __CLSCSMutex3
+6	468	98		mov __CLSCSArgs0.Port, ___HTSMUXsetMode_7qG2_smux_7qG2_000
+6	468	100		syscall 23, __CLSCSArgs0
+6	468	103		mov __tmpsbyte_HTSMUXsetMode, __CLSCSArgs0.BytesReady
+6	468	105		mov __D0_HTSMUXsetMode, __CLSCSArgs0.Result
+6	468	108		release __CLSCSMutex0
+6	468	109		release __CLSCSMutex1
+6	468	110		release __CLSCSMutex2
+6	468	111		release __CLSCSMutex3
+6	11133	112	#line 11133 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	467	112	#line 467 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	468	112		mov __signed_stack_001_HTSMUXsetMode, __D0_HTSMUXsetMode
+6	467	114	#line 467 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	468	114		set __D0_HTSMUXsetMode, 32
+6	467	117	#line 467 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	468	117		cmp 4, __zf_HTSMUXsetMode, __signed_stack_001_HTSMUXsetMode, __D0_HTSMUXsetMode
+6	467	121	#line 467 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	468	121		mov __D0_HTSMUXsetMode, __zf_HTSMUXsetMode
+6	467	123	#line 467 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	468	123		brtst 4, __NXC_Label_871, __zf_HTSMUXsetMode
+6	7927	126	#line 7927 "NXCDefs.h"
+6	7928	126		wait 1
+6	7927	128	#line 7927 "NXCDefs.h"
+6	468	128	#line 468 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	468	128	#line 468 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	469	128		jmp __NXC_Label_870
+6	468	130	#line 468 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	468	130	#line 468 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	469	130	#pragma macro 25
+6	469	130		acquire __CLSWMutex0
+6	469	131		acquire __CLSWMutex1
+6	469	132		acquire __CLSWMutex2
+6	469	133		acquire __CLSWMutex3
+6	469	134		mov __CLSWArgs0.Port, ___HTSMUXsetMode_7qG2_smux_7qG2_000
+6	469	136		mov __CLSWArgs0.ReturnLen, __constVal0
+6	469	138		mov __CLSWArgs0.Buffer, ___HTSMUXsetMode_7qG2_sendMsg_7qG2_000
+6	469	140		syscall 21, __CLSWArgs0
+6	469	143		mov __D0_HTSMUXsetMode, __CLSWArgs0.Result
+6	469	146		release __CLSWMutex0
+6	469	147		release __CLSWMutex1
+6	469	148		release __CLSWMutex2
+6	469	149		release __CLSWMutex3
+6	11155	150	#line 11155 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	468	150	#line 468 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	468	150	#line 468 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	470	150	#line 470 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	471	150	#pragma macro 23
+6	471	150		acquire __CLSCSMutex0
+6	471	151		acquire __CLSCSMutex1
+6	471	152		acquire __CLSCSMutex2
+6	471	153		acquire __CLSCSMutex3
+6	471	154		mov __CLSCSArgs0.Port, ___HTSMUXsetMode_7qG2_smux_7qG2_000
+6	471	156		syscall 23, __CLSCSArgs0
+6	471	159		mov __tmpsbyte_HTSMUXsetMode, __CLSCSArgs0.BytesReady
+6	471	161		mov __D0_HTSMUXsetMode, __CLSCSArgs0.Result
+6	471	164		release __CLSCSMutex0
+6	471	165		release __CLSCSMutex1
+6	471	166		release __CLSCSMutex2
+6	471	167		release __CLSCSMutex3
+6	11160	168	#line 11160 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	470	168	#line 470 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	471	168		mov __signed_stack_001_HTSMUXsetMode, __D0_HTSMUXsetMode
+6	470	170	#line 470 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	471	170		set __D0_HTSMUXsetMode, 32
+6	470	173	#line 470 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	471	173		cmp 4, __zf_HTSMUXsetMode, __signed_stack_001_HTSMUXsetMode, __D0_HTSMUXsetMode
+6	470	177	#line 470 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	471	177		mov __D0_HTSMUXsetMode, __zf_HTSMUXsetMode
+6	470	179	#line 470 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	471	179		brtst 4, __NXC_Label_877, __zf_HTSMUXsetMode
+6	470	182	#line 470 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	471	182		mov __signed_stack_001_HTSMUXsetMode, __D0_HTSMUXsetMode
+6	470	184	#line 470 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	471	184	#pragma macro 23
+6	471	184		acquire __CLSCSMutex0
+6	471	185		acquire __CLSCSMutex1
+6	471	186		acquire __CLSCSMutex2
+6	471	187		acquire __CLSCSMutex3
+6	471	188		mov __CLSCSArgs0.Port, ___HTSMUXsetMode_7qG2_smux_7qG2_000
+6	471	190		syscall 23, __CLSCSArgs0
+6	471	193		mov __tmpsbyte_HTSMUXsetMode, __CLSCSArgs0.BytesReady
+6	471	195		mov __D0_HTSMUXsetMode, __CLSCSArgs0.Result
+6	471	198		release __CLSCSMutex0
+6	471	199		release __CLSCSMutex1
+6	471	200		release __CLSCSMutex2
+6	471	201		release __CLSCSMutex3
+6	11176	202	#line 11176 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	470	202	#line 470 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	471	202		mov __signed_stack_002_HTSMUXsetMode, __D0_HTSMUXsetMode
+6	470	204	#line 470 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	471	204		set __D0_HTSMUXsetMode, 0
+6	470	207	#line 470 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	471	207		cmp 5, __zf_HTSMUXsetMode, __signed_stack_002_HTSMUXsetMode, __D0_HTSMUXsetMode
+6	470	211	#line 470 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	470	211	#line 470 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	471	211		and __D0_HTSMUXsetMode, __signed_stack_001_HTSMUXsetMode, __zf_HTSMUXsetMode
+6	470	215	#line 470 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	471	215		tst 5, __zf_HTSMUXsetMode, __D0_HTSMUXsetMode
+6	470	218	#line 470 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	471	218		brtst 4, __NXC_Label_875, __zf_HTSMUXsetMode
+6	7927	221	#line 7927 "NXCDefs.h"
+6	7928	221		wait 1
+6	7927	223	#line 7927 "NXCDefs.h"
+6	471	223	#line 471 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	471	223	#line 471 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	472	223		jmp __NXC_Label_874
+6	471	225	#line 471 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	471	225	#line 471 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	472	225	#pragma macro 23
+6	472	225		acquire __CLSCSMutex0
+6	472	226		acquire __CLSCSMutex1
+6	472	227		acquire __CLSCSMutex2
+6	472	228		acquire __CLSCSMutex3
+6	472	229		mov __CLSCSArgs0.Port, ___HTSMUXsetMode_7qG2_smux_7qG2_000
+6	472	231		syscall 23, __CLSCSArgs0
+6	472	234		mov __tmpsbyte_HTSMUXsetMode, __CLSCSArgs0.BytesReady
+6	472	236		mov __D0_HTSMUXsetMode, __CLSCSArgs0.Result
+6	472	239		release __CLSCSMutex0
+6	472	240		release __CLSCSMutex1
+6	472	241		release __CLSCSMutex2
+6	472	242		release __CLSCSMutex3
+6	11204	243	#line 11204 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	471	243	#line 471 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	472	243		mov __signed_stack_001_HTSMUXsetMode, __D0_HTSMUXsetMode
+6	471	245	#line 471 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	472	245		set __D0_HTSMUXsetMode, 0
+6	471	248	#line 471 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	472	248		cmp 4, __zf_HTSMUXsetMode, __signed_stack_001_HTSMUXsetMode, __D0_HTSMUXsetMode
+6	471	252	#line 471 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	472	252		mov __DU0_HTSMUXsetMode, __zf_HTSMUXsetMode
+6	472	254	#line 472 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	472	254	#line 472 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	473	254		subret ___HTSMUXsetMode_return
+6	472	256	#line 472 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	472	256	#line 472 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	480	256	#line 480 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+6	481	256		subret ___HTSMUXsetMode_return
+7	481	0	#line 481 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+7	481	0	#line 481 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+7	481	0	#line 481 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+7	481	0	#line 481 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+7	482	0		div __signed_stack_001HTSMUXsetAnalogueActive, __HTSMUXsetAnalogueActive_7qG2_muxport_7qG2_000, __constVal4
+7	481	4	#line 481 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+7	481	4	#line 481 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+7	481	4	#line 481 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+7	482	4		mul __signed_stack_001HTSMUXsetAnalogueActive, __signed_stack_001HTSMUXsetAnalogueActive, __constVal4
+7	481	8	#line 481 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+7	481	8	#line 481 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+7	481	8	#line 481 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+7	481	8	#line 481 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+7	481	8	#line 481 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+7	482	8		mod __D0HTSMUXsetAnalogueActive, __HTSMUXsetAnalogueActive_7qG2_muxport_7qG2_000, __constVal4
+7	481	12	#line 481 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+7	482	12		add __signed_stack_001HTSMUXsetAnalogueActive, __signed_stack_001HTSMUXsetAnalogueActive, __D0HTSMUXsetAnalogueActive
+7	481	16	#line 481 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+7	481	16	#line 481 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+7	482	16		index __ArrHelper__HTSMUXsetAnalogueActive_98_0, smuxSensorTypes, __signed_stack_001HTSMUXsetAnalogueActive
+7	481	20	#line 481 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+7	482	20		mov __unsigned_stack_001HTSMUXsetAnalogueActive, __ArrHelper__HTSMUXsetAnalogueActive_98_0
+7	481	22	#line 481 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+7	482	22	#line 482 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+7	483	22		set __D0HTSMUXsetAnalogueActive, 0
+7	482	25	#line 482 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+7	483	25		cmp 5, __zfHTSMUXsetAnalogueActive, __unsigned_stack_001HTSMUXsetAnalogueActive, __D0HTSMUXsetAnalogueActive
+7	482	29	#line 482 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+7	483	29		mov __D0HTSMUXsetAnalogueActive, __zfHTSMUXsetAnalogueActive
+7	482	31	#line 482 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+7	483	31		brtst 4, __NXC_Label_890, __zfHTSMUXsetAnalogueActive
+7	484	34	#line 484 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+7	485	34		set __DU0HTSMUXsetAnalogueActive, 0
+7	484	37	#line 484 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+7	484	37	#line 484 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+7	485	37		subret __HTSMUXsetAnalogueActive_return
+7	484	39	#line 484 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+7	484	39	#line 484 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+7	484	39	#line 484 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+7	485	39		mov ___HTSMUXsetMode_7qG2_muxport_7qG2_000, __HTSMUXsetAnalogueActive_7qG2_muxport_7qG2_000
+7	484	41	#line 484 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+7	484	41	#line 484 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+7	485	41		set ___HTSMUXsetMode_7qG2_mode_7qG2_000, 4
+7	484	44	#line 484 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+7	485	44	#line 485 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+7	486	44		subcall _HTSMUXsetMode, ___HTSMUXsetMode_return
+7	485	46	#line 485 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+7	485	46	#line 485 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+7	486	46		not __DU0HTSMUXsetAnalogueActive, __DU0_HTSMUXsetMode
+7	485	49	#line 485 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+7	486	49		tst 5, __zfHTSMUXsetAnalogueActive, __DU0HTSMUXsetAnalogueActive
+7	485	52	#line 485 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+7	486	52		brtst 4, __NXC_Label_899, __zfHTSMUXsetAnalogueActive
+7	487	55	#line 487 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+7	488	55		set __DU0HTSMUXsetAnalogueActive, 0
+7	487	58	#line 487 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+7	487	58	#line 487 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+7	488	58		subret __HTSMUXsetAnalogueActive_return
+7	487	60	#line 487 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+7	487	60	#line 487 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+7	487	60	#line 487 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+7	487	60	#line 487 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+7	487	60	#line 487 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+7	487	60	#line 487 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+7	488	60		div ___HTSMUXsendCmd_7qG2_smux_7qG2_000, __HTSMUXsetAnalogueActive_7qG2_muxport_7qG2_000, __constVal4
+7	487	64	#line 487 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+7	487	64	#line 487 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+7	488	64		set ___HTSMUXsendCmd_7qG2_cmd_7qG2_000, 2
+7	487	67	#line 487 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+7	488	67	#line 488 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+7	489	67		subcall _HTSMUXsendCmd, ___HTSMUXsendCmd_return
+7	488	69	#line 488 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+7	489	69		mov __DU0HTSMUXsetAnalogueActive, __DU0_HTSMUXsendCmd
+7	488	71	#line 488 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+7	489	71		subret __HTSMUXsetAnalogueActive_return
+7	488	73	#line 488 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+7	496	73	#line 496 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+7	497	73		subret __HTSMUXsetAnalogueActive_return
+8	497	0	#line 497 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+8	497	0	#line 497 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+8	497	0	#line 497 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+8	497	0	#line 497 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+8	498	0		div __signed_stack_001HTSMUXsetAnalogueInactive, __HTSMUXsetAnalogueInactive_7qG2_muxport_7qG2_000, __constVal4
+8	497	4	#line 497 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+8	497	4	#line 497 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+8	497	4	#line 497 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+8	498	4		mul __signed_stack_001HTSMUXsetAnalogueInactive, __signed_stack_001HTSMUXsetAnalogueInactive, __constVal4
+8	497	8	#line 497 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+8	497	8	#line 497 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+8	497	8	#line 497 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+8	497	8	#line 497 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+8	497	8	#line 497 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+8	498	8		mod __D0HTSMUXsetAnalogueInactive, __HTSMUXsetAnalogueInactive_7qG2_muxport_7qG2_000, __constVal4
+8	497	12	#line 497 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+8	498	12		add __signed_stack_001HTSMUXsetAnalogueInactive, __signed_stack_001HTSMUXsetAnalogueInactive, __D0HTSMUXsetAnalogueInactive
+8	497	16	#line 497 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+8	497	16	#line 497 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+8	498	16		index __ArrHelper__HTSMUXsetAnalogueInactive_98_0, smuxSensorTypes, __signed_stack_001HTSMUXsetAnalogueInactive
+8	497	20	#line 497 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+8	498	20		mov __unsigned_stack_001HTSMUXsetAnalogueInactive, __ArrHelper__HTSMUXsetAnalogueInactive_98_0
+8	497	22	#line 497 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+8	498	22	#line 498 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+8	499	22		set __D0HTSMUXsetAnalogueInactive, 0
+8	498	25	#line 498 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+8	499	25		cmp 5, __zfHTSMUXsetAnalogueInactive, __unsigned_stack_001HTSMUXsetAnalogueInactive, __D0HTSMUXsetAnalogueInactive
+8	498	29	#line 498 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+8	499	29		mov __D0HTSMUXsetAnalogueInactive, __zfHTSMUXsetAnalogueInactive
+8	498	31	#line 498 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+8	499	31		brtst 4, __NXC_Label_912, __zfHTSMUXsetAnalogueInactive
+8	500	34	#line 500 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+8	501	34		set __DU0HTSMUXsetAnalogueInactive, 0
+8	500	37	#line 500 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+8	500	37	#line 500 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+8	501	37		subret __HTSMUXsetAnalogueInactive_return
+8	500	39	#line 500 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+8	500	39	#line 500 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+8	500	39	#line 500 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+8	501	39		mov ___HTSMUXsetMode_7qG2_muxport_7qG2_000, __HTSMUXsetAnalogueInactive_7qG2_muxport_7qG2_000
+8	500	41	#line 500 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+8	500	41	#line 500 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+8	501	41		set ___HTSMUXsetMode_7qG2_mode_7qG2_000, 0
+8	500	44	#line 500 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+8	501	44	#line 501 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+8	502	44		subcall _HTSMUXsetMode, ___HTSMUXsetMode_return
+8	501	46	#line 501 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+8	501	46	#line 501 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+8	502	46		not __DU0HTSMUXsetAnalogueInactive, __DU0_HTSMUXsetMode
+8	501	49	#line 501 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+8	502	49		tst 5, __zfHTSMUXsetAnalogueInactive, __DU0HTSMUXsetAnalogueInactive
+8	501	52	#line 501 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+8	502	52		brtst 4, __NXC_Label_921, __zfHTSMUXsetAnalogueInactive
+8	503	55	#line 503 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+8	504	55		set __DU0HTSMUXsetAnalogueInactive, 0
+8	503	58	#line 503 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+8	503	58	#line 503 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+8	504	58		subret __HTSMUXsetAnalogueInactive_return
+8	503	60	#line 503 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+8	503	60	#line 503 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+8	503	60	#line 503 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+8	503	60	#line 503 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+8	503	60	#line 503 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+8	503	60	#line 503 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+8	504	60		div ___HTSMUXsendCmd_7qG2_smux_7qG2_000, __HTSMUXsetAnalogueInactive_7qG2_muxport_7qG2_000, __constVal4
+8	503	64	#line 503 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+8	503	64	#line 503 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+8	504	64		set ___HTSMUXsendCmd_7qG2_cmd_7qG2_000, 2
+8	503	67	#line 503 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+8	504	67	#line 504 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+8	505	67		subcall _HTSMUXsendCmd, ___HTSMUXsendCmd_return
+8	504	69	#line 504 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+8	505	69		mov __DU0HTSMUXsetAnalogueInactive, __DU0_HTSMUXsendCmd
+8	504	71	#line 504 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+8	505	71		subret __HTSMUXsetAnalogueInactive_return
+8	504	73	#line 504 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+8	514	73	#line 514 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+8	515	73		subret __HTSMUXsetAnalogueInactive_return
+9	869	0	#line 869 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+9	870	0		set __signed_stack_001smuxSensorLegoLightRaw, 1023
+9	869	3	#line 869 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+9	869	3	#line 869 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+9	870	3		mov __HTSMUXreadAnalogue_7qG2_muxport_7qG2_000, __smuxSensorLegoLightRaw_7qG2_muxport_7qG2_000
+9	869	5	#line 869 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+9	870	5	#line 870 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+9	871	5		subcall HTSMUXreadAnalogue, __HTSMUXreadAnalogue_return
+9	870	7	#line 870 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+9	870	7	#line 870 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+9	871	7		sub __D0smuxSensorLegoLightRaw, __signed_stack_001smuxSensorLegoLightRaw, __D0HTSMUXreadAnalogue
+9	870	11	#line 870 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+9	871	11		subret __smuxSensorLegoLightRaw_return
+9	870	13	#line 870 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+9	880	13	#line 880 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+9	881	13		subret __smuxSensorLegoLightRaw_return
+10	881	0	#line 881 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+10	882	0		mov __smuxSensorLegoLightRaw_7qG2_muxport_7qG2_000, __smuxSensorLegoLightNorm_7qG2_muxport_7qG2_000
+10	881	2	#line 881 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+10	882	2	#line 882 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+10	883	2		subcall smuxSensorLegoLightRaw, __smuxSensorLegoLightRaw_return
+10	882	4	#line 882 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+10	882	4	#line 882 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+10	882	4	#line 882 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+10	882	4	#line 882 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+10	882	4	#line 882 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+10	882	4	#line 882 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+10	883	4		mul __signed_stack_001smuxSensorLegoLightNorm, __D0smuxSensorLegoLightRaw, __constVal100
+10	882	8	#line 882 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+10	883	8	#line 883 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+10	883	8	#line 883 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+10	884	8		div __D0smuxSensorLegoLightNorm, __signed_stack_001smuxSensorLegoLightNorm, __constVal1024
+10	883	12	#line 883 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+10	884	12		subret __smuxSensorLegoLightNorm_return
+10	883	14	#line 883 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+10	894	14	#line 894 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+10	895	14		subret __smuxSensorLegoLightNorm_return
+11	896	0	#line 896 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+11	896	0	#line 896 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+11	897	0		not __DU0smuxSetSensorLegoLight, __smuxSetSensorLegoLight_7qG2_active_7qG2_000
+11	896	3	#line 896 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+11	897	3		tst 5, __zfsmuxSetSensorLegoLight, __DU0smuxSetSensorLegoLight
+11	896	6	#line 896 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+11	897	6		brtst 4, __NXC_Label_1378, __zfsmuxSetSensorLegoLight
+11	896	9	#line 896 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+11	897	9		mov __HTSMUXsetAnalogueInactive_7qG2_muxport_7qG2_000, __smuxSetSensorLegoLight_7qG2_muxport_7qG2_000
+11	896	11	#line 896 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+11	897	11	#line 897 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+11	898	11		subcall HTSMUXsetAnalogueInactive, __HTSMUXsetAnalogueInactive_return
+11	897	13	#line 897 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+11	898	13		mov __DU0smuxSetSensorLegoLight, __DU0HTSMUXsetAnalogueInactive
+11	897	15	#line 897 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+11	898	15		subret __smuxSetSensorLegoLight_return
+11	897	17	#line 897 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+11	898	17	#line 898 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+11	899	17		jmp __NXC_Label_1383
+11	898	19	#line 898 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+11	899	19		mov __HTSMUXsetAnalogueActive_7qG2_muxport_7qG2_000, __smuxSetSensorLegoLight_7qG2_muxport_7qG2_000
+11	898	21	#line 898 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+11	899	21	#line 899 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+11	900	21		subcall HTSMUXsetAnalogueActive, __HTSMUXsetAnalogueActive_return
+11	899	23	#line 899 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+11	900	23		mov __DU0smuxSetSensorLegoLight, __DU0HTSMUXsetAnalogueActive
+11	899	25	#line 899 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+11	900	25		subret __smuxSetSensorLegoLight_return
+11	899	27	#line 899 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+11	899	27	#line 899 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+11	909	27	#line 909 "C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h"
+11	910	27		subret __smuxSetSensorLegoLight_return
+12	75	0	#line 75 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	76	0		set __signed_stack_001Button1, 3
+12	75	3	#line 75 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	75	3	#line 75 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	76	3		set __D0Button1, 1
+12	75	6	#line 75 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	75	6	#line 75 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	76	6		mov __RBtnArgs.Index, __signed_stack_001Button1
+12	75	8	#line 75 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	76	8		mov __RBtnArgs.Reset, __D0Button1
+12	75	11	#line 75 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	76	11		syscall 20, __RBtnArgs
+12	75	14	#line 75 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	75	14	#line 75 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	76	14	#line 76 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	77	14		not __D0Button1, __RBtnArgs.Pressed
+12	77	17	#line 77 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	78	17		tst 5, __zfButton1, __D0Button1
+12	77	20	#line 77 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	78	20		brtst 4, __NXC_Label_1427, __zfButton1
+12	77	23	#line 77 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	78	23		set __signed_stack_001Button1, 0
+12	77	26	#line 77 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	77	26	#line 77 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	78	26		set __signed_stack_002Button1, 32
+12	77	29	#line 77 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	77	29	#line 77 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	78	29		strcat __strbufButton1, __constStr0009
+12	78	33	#line 78 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	79	33		acquire __TextOutMutex
+12	78	34	#line 78 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	79	34		mov __TextOutArgs.Location.X, __signed_stack_001Button1
+12	78	36	#line 78 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	79	36		mov __TextOutArgs.Location.Y, __signed_stack_002Button1
+12	78	38	#line 78 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	79	38		set __TextOutArgs.Options, 0
+12	78	41	#line 78 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	79	41		mov __TextOutArgs.Text, __strbufButton1
+12	78	43	#line 78 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	79	43		syscall 13, __TextOutArgs
+12	78	46	#line 78 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	79	46		mov __D0Button1, __TextOutArgs.Result
+12	78	49	#line 78 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	79	49		release __TextOutMutex
+12	78	50	#line 78 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	78	50	#line 78 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	79	50		set __signed_stack_001Button1, 0
+12	78	53	#line 78 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	78	53	#line 78 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	79	53		set __signed_stack_002Button1, 24
+12	78	56	#line 78 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	78	56	#line 78 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	79	56		strcat __strbufButton1, __constStr0010
+12	79	60	#line 79 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	80	60		acquire __TextOutMutex
+12	79	61	#line 79 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	80	61		mov __TextOutArgs.Location.X, __signed_stack_001Button1
+12	79	63	#line 79 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	80	63		mov __TextOutArgs.Location.Y, __signed_stack_002Button1
+12	79	65	#line 79 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	80	65		set __TextOutArgs.Options, 0
+12	79	68	#line 79 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	80	68		mov __TextOutArgs.Text, __strbufButton1
+12	79	70	#line 79 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	80	70		syscall 13, __TextOutArgs
+12	79	73	#line 79 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	80	73		mov __D0Button1, __TextOutArgs.Result
+12	79	76	#line 79 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	80	76		release __TextOutMutex
+12	79	77	#line 79 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	79	77	#line 79 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	80	77		set __smuxSensorLegoLightNorm_7qG2_muxport_7qG2_000, 8
+12	79	80	#line 79 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	79	80	#line 79 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	80	80		subcall smuxSensorLegoLightNorm, __smuxSensorLegoLightNorm_return
+12	79	82	#line 79 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	79	82	#line 79 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	80	82	#line 80 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	80	82	#line 80 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	81	82		add SchwelleLA1, __D0smuxSensorLegoLightNorm, __constVal2
+12	80	86	#line 80 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	80	86	#line 80 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	82	86	#line 82 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	83	86		jmp __NXC_Label_1426
+12	82	88	#line 82 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	6069	88	#line 6069 "NXCDefs.h"
+12	6070	88	#pragma macro 6
+12	6070	88		acquire __PointOutMutex
+12	6070	89		mov __PointOutArgs.Location.X, __constVal200
+12	6070	91		mov __PointOutArgs.Location.Y, __constVal200
+12	6070	93		mov __PointOutArgs.Options, __constVal1
+12	6070	95		syscall 14, __PointOutArgs
+12	6070	98		release __PointOutMutex
+12	14200	99	#line 14200 "NXCDefs.h"
+12	6069	99	#line 6069 "NXCDefs.h"
+12	83	99	#line 83 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	83	99	#line 83 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	84	99		set __signed_stack_001Button1, 0
+12	83	102	#line 83 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	83	102	#line 83 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	84	102		set __signed_stack_002Button1, 32
+12	83	105	#line 83 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	83	105	#line 83 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	84	105		strcat __strbufButton1, __constStr0011
+12	84	109	#line 84 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	85	109		acquire __TextOutMutex
+12	84	110	#line 84 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	85	110		mov __TextOutArgs.Location.X, __signed_stack_001Button1
+12	84	112	#line 84 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	85	112		mov __TextOutArgs.Location.Y, __signed_stack_002Button1
+12	84	114	#line 84 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	85	114		set __TextOutArgs.Options, 0
+12	84	117	#line 84 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	85	117		mov __TextOutArgs.Text, __strbufButton1
+12	84	119	#line 84 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	85	119		syscall 13, __TextOutArgs
+12	84	122	#line 84 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	85	122		mov __D0Button1, __TextOutArgs.Result
+12	84	125	#line 84 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	85	125		release __TextOutMutex
+12	84	126	#line 84 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	84	126	#line 84 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	85	126		set __signed_stack_001Button1, 0
+12	84	129	#line 84 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	84	129	#line 84 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	85	129		set __signed_stack_002Button1, 24
+12	84	132	#line 84 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	84	132	#line 84 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	85	132		strcat __strbufButton1, __constStr0012
+12	85	136	#line 85 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	86	136		acquire __TextOutMutex
+12	85	137	#line 85 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	86	137		mov __TextOutArgs.Location.X, __signed_stack_001Button1
+12	85	139	#line 85 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	86	139		mov __TextOutArgs.Location.Y, __signed_stack_002Button1
+12	85	141	#line 85 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	86	141		set __TextOutArgs.Options, 0
+12	85	144	#line 85 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	86	144		mov __TextOutArgs.Text, __strbufButton1
+12	85	146	#line 85 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	86	146		syscall 13, __TextOutArgs
+12	85	149	#line 85 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	86	149		mov __D0Button1, __TextOutArgs.Result
+12	85	152	#line 85 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	86	152		release __TextOutMutex
+12	85	153	#line 85 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	85	153	#line 85 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	86	153		set __Wait_7qG2_ms_7qG2_000_inline_Button1, 1000
+12	85	156	#line 85 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	7921	156	#line 7921 "NXCDefs.h"
+12	7922	156		wait 1000
+12	7921	158	#line 7921 "NXCDefs.h"
+12	86	158	#line 86 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	6069	158	#line 6069 "NXCDefs.h"
+12	6070	158	#pragma macro 6
+12	6070	158		acquire __PointOutMutex
+12	6070	159		mov __PointOutArgs.Location.X, __constVal200
+12	6070	161		mov __PointOutArgs.Location.Y, __constVal200
+12	6070	163		mov __PointOutArgs.Options, __constVal1
+12	6070	165		syscall 14, __PointOutArgs
+12	6070	168		release __PointOutMutex
+12	14280	169	#line 14280 "NXCDefs.h"
+12	6069	169	#line 6069 "NXCDefs.h"
+12	89	169	#line 89 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	89	169	#line 89 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	90	169		set __signed_stack_001Button1, 3
+12	89	172	#line 89 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	89	172	#line 89 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	90	172		set __D0Button1, 1
+12	89	175	#line 89 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	89	175	#line 89 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	90	175		mov __RBtnArgs.Index, __signed_stack_001Button1
+12	89	177	#line 89 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	90	177		mov __RBtnArgs.Reset, __D0Button1
+12	89	180	#line 89 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	90	180		syscall 20, __RBtnArgs
+12	89	183	#line 89 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	89	183	#line 89 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	90	183	#line 90 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	91	183		not __D0Button1, __RBtnArgs.Pressed
+12	91	186	#line 91 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	92	186		tst 5, __zfButton1, __D0Button1
+12	91	189	#line 91 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	92	189		brtst 4, __NXC_Label_1459, __zfButton1
+12	91	192	#line 91 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	92	192		set __signed_stack_001Button1, 0
+12	91	195	#line 91 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	91	195	#line 91 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	92	195		set __signed_stack_002Button1, 32
+12	91	198	#line 91 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	91	198	#line 91 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	92	198		strcat __strbufButton1, __constStr0009
+12	92	202	#line 92 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	93	202		acquire __TextOutMutex
+12	92	203	#line 92 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	93	203		mov __TextOutArgs.Location.X, __signed_stack_001Button1
+12	92	205	#line 92 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	93	205		mov __TextOutArgs.Location.Y, __signed_stack_002Button1
+12	92	207	#line 92 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	93	207		set __TextOutArgs.Options, 0
+12	92	210	#line 92 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	93	210		mov __TextOutArgs.Text, __strbufButton1
+12	92	212	#line 92 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	93	212		syscall 13, __TextOutArgs
+12	92	215	#line 92 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	93	215		mov __D0Button1, __TextOutArgs.Result
+12	92	218	#line 92 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	93	218		release __TextOutMutex
+12	92	219	#line 92 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	92	219	#line 92 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	93	219		set __signed_stack_001Button1, 0
+12	92	222	#line 92 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	92	222	#line 92 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	93	222		set __signed_stack_002Button1, 24
+12	92	225	#line 92 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	92	225	#line 92 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	93	225		strcat __strbufButton1, __constStr0013
+12	93	229	#line 93 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	94	229		acquire __TextOutMutex
+12	93	230	#line 93 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	94	230		mov __TextOutArgs.Location.X, __signed_stack_001Button1
+12	93	232	#line 93 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	94	232		mov __TextOutArgs.Location.Y, __signed_stack_002Button1
+12	93	234	#line 93 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	94	234		set __TextOutArgs.Options, 0
+12	93	237	#line 93 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	94	237		mov __TextOutArgs.Text, __strbufButton1
+12	93	239	#line 93 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	94	239		syscall 13, __TextOutArgs
+12	93	242	#line 93 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	94	242		mov __D0Button1, __TextOutArgs.Result
+12	93	245	#line 93 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	94	245		release __TextOutMutex
+12	93	246	#line 93 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	93	246	#line 93 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	94	246		set __smuxSensorLegoLightNorm_7qG2_muxport_7qG2_000, 11
+12	93	249	#line 93 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	93	249	#line 93 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	94	249		subcall smuxSensorLegoLightNorm, __smuxSensorLegoLightNorm_return
+12	93	251	#line 93 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	93	251	#line 93 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	94	251	#line 94 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	94	251	#line 94 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	95	251		add SchwelleRA1, __D0smuxSensorLegoLightNorm, __constVal2
+12	94	255	#line 94 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	94	255	#line 94 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	96	255	#line 96 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	97	255		jmp __NXC_Label_1458
+12	96	257	#line 96 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	6069	257	#line 6069 "NXCDefs.h"
+12	6070	257	#pragma macro 6
+12	6070	257		acquire __PointOutMutex
+12	6070	258		mov __PointOutArgs.Location.X, __constVal200
+12	6070	260		mov __PointOutArgs.Location.Y, __constVal200
+12	6070	262		mov __PointOutArgs.Options, __constVal1
+12	6070	264		syscall 14, __PointOutArgs
+12	6070	267		release __PointOutMutex
+12	14404	268	#line 14404 "NXCDefs.h"
+12	6069	268	#line 6069 "NXCDefs.h"
+12	97	268	#line 97 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	97	268	#line 97 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	98	268		set __signed_stack_001Button1, 0
+12	97	271	#line 97 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	97	271	#line 97 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	98	271		set __signed_stack_002Button1, 32
+12	97	274	#line 97 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	97	274	#line 97 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	98	274		strcat __strbufButton1, __constStr0011
+12	98	278	#line 98 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	99	278		acquire __TextOutMutex
+12	98	279	#line 98 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	99	279		mov __TextOutArgs.Location.X, __signed_stack_001Button1
+12	98	281	#line 98 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	99	281		mov __TextOutArgs.Location.Y, __signed_stack_002Button1
+12	98	283	#line 98 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	99	283		set __TextOutArgs.Options, 0
+12	98	286	#line 98 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	99	286		mov __TextOutArgs.Text, __strbufButton1
+12	98	288	#line 98 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	99	288		syscall 13, __TextOutArgs
+12	98	291	#line 98 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	99	291		mov __D0Button1, __TextOutArgs.Result
+12	98	294	#line 98 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	99	294		release __TextOutMutex
+12	98	295	#line 98 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	98	295	#line 98 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	99	295		set __signed_stack_001Button1, 0
+12	98	298	#line 98 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	98	298	#line 98 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	99	298		set __signed_stack_002Button1, 24
+12	98	301	#line 98 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	98	301	#line 98 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	99	301		strcat __strbufButton1, __constStr0014
+12	99	305	#line 99 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	100	305		acquire __TextOutMutex
+12	99	306	#line 99 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	100	306		mov __TextOutArgs.Location.X, __signed_stack_001Button1
+12	99	308	#line 99 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	100	308		mov __TextOutArgs.Location.Y, __signed_stack_002Button1
+12	99	310	#line 99 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	100	310		set __TextOutArgs.Options, 0
+12	99	313	#line 99 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	100	313		mov __TextOutArgs.Text, __strbufButton1
+12	99	315	#line 99 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	100	315		syscall 13, __TextOutArgs
+12	99	318	#line 99 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	100	318		mov __D0Button1, __TextOutArgs.Result
+12	99	321	#line 99 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	100	321		release __TextOutMutex
+12	99	322	#line 99 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	99	322	#line 99 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	100	322		set __Wait_7qG2_ms_7qG2_000_inline_Button1, 1000
+12	99	325	#line 99 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	7921	325	#line 7921 "NXCDefs.h"
+12	7922	325		wait 1000
+12	7921	327	#line 7921 "NXCDefs.h"
+12	100	327	#line 100 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	6069	327	#line 6069 "NXCDefs.h"
+12	6070	327	#pragma macro 6
+12	6070	327		acquire __PointOutMutex
+12	6070	328		mov __PointOutArgs.Location.X, __constVal200
+12	6070	330		mov __PointOutArgs.Location.Y, __constVal200
+12	6070	332		mov __PointOutArgs.Options, __constVal1
+12	6070	334		syscall 14, __PointOutArgs
+12	6070	337		release __PointOutMutex
+12	14480	338	#line 14480 "NXCDefs.h"
+12	6069	338	#line 6069 "NXCDefs.h"
+12	103	338	#line 103 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	103	338	#line 103 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	104	338		set __signed_stack_001Button1, 3
+12	103	341	#line 103 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	103	341	#line 103 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	104	341		set __D0Button1, 1
+12	103	344	#line 103 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	103	344	#line 103 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	104	344		mov __RBtnArgs.Index, __signed_stack_001Button1
+12	103	346	#line 103 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	104	346		mov __RBtnArgs.Reset, __D0Button1
+12	103	349	#line 103 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	104	349		syscall 20, __RBtnArgs
+12	103	352	#line 103 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	103	352	#line 103 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	104	352	#line 104 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	105	352		not __D0Button1, __RBtnArgs.Pressed
+12	105	355	#line 105 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	106	355		tst 5, __zfButton1, __D0Button1
+12	105	358	#line 105 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	106	358		brtst 4, __NXC_Label_1491, __zfButton1
+12	105	361	#line 105 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	106	361		set __signed_stack_001Button1, 0
+12	105	364	#line 105 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	105	364	#line 105 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	106	364		set __signed_stack_002Button1, 32
+12	105	367	#line 105 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	105	367	#line 105 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	106	367		strcat __strbufButton1, __constStr0009
+12	106	371	#line 106 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	107	371		acquire __TextOutMutex
+12	106	372	#line 106 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	107	372		mov __TextOutArgs.Location.X, __signed_stack_001Button1
+12	106	374	#line 106 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	107	374		mov __TextOutArgs.Location.Y, __signed_stack_002Button1
+12	106	376	#line 106 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	107	376		set __TextOutArgs.Options, 0
+12	106	379	#line 106 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	107	379		mov __TextOutArgs.Text, __strbufButton1
+12	106	381	#line 106 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	107	381		syscall 13, __TextOutArgs
+12	106	384	#line 106 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	107	384		mov __D0Button1, __TextOutArgs.Result
+12	106	387	#line 106 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	107	387		release __TextOutMutex
+12	106	388	#line 106 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	106	388	#line 106 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	107	388		set __signed_stack_001Button1, 0
+12	106	391	#line 106 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	106	391	#line 106 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	107	391		set __signed_stack_002Button1, 24
+12	106	394	#line 106 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	106	394	#line 106 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	107	394		strcat __strbufButton1, __constStr0015
+12	107	398	#line 107 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	108	398		acquire __TextOutMutex
+12	107	399	#line 107 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	108	399		mov __TextOutArgs.Location.X, __signed_stack_001Button1
+12	107	401	#line 107 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	108	401		mov __TextOutArgs.Location.Y, __signed_stack_002Button1
+12	107	403	#line 107 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	108	403		set __TextOutArgs.Options, 0
+12	107	406	#line 107 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	108	406		mov __TextOutArgs.Text, __strbufButton1
+12	107	408	#line 107 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	108	408		syscall 13, __TextOutArgs
+12	107	411	#line 107 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	108	411		mov __D0Button1, __TextOutArgs.Result
+12	107	414	#line 107 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	108	414		release __TextOutMutex
+12	107	415	#line 107 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	107	415	#line 107 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	108	415		set __smuxSensorLegoLightNorm_7qG2_muxport_7qG2_000, 8
+12	107	418	#line 107 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	107	418	#line 107 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	108	418		subcall smuxSensorLegoLightNorm, __smuxSensorLegoLightNorm_return
+12	107	420	#line 107 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	107	420	#line 107 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	107	420	#line 107 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	107	420	#line 107 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	108	420		add __signed_stack_001Button1, __D0smuxSensorLegoLightNorm, __constVal2
+12	107	424	#line 107 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	108	424	#line 108 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	108	424	#line 108 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	109	424		add SchwelleLA2, __signed_stack_001Button1, SchwelleLA1
+12	108	428	#line 108 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	108	428	#line 108 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	110	428	#line 110 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	111	428		jmp __NXC_Label_1490
+12	110	430	#line 110 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	6069	430	#line 6069 "NXCDefs.h"
+12	6070	430	#pragma macro 6
+12	6070	430		acquire __PointOutMutex
+12	6070	431		mov __PointOutArgs.Location.X, __constVal200
+12	6070	433		mov __PointOutArgs.Location.Y, __constVal200
+12	6070	435		mov __PointOutArgs.Options, __constVal1
+12	6070	437		syscall 14, __PointOutArgs
+12	6070	440		release __PointOutMutex
+12	14610	441	#line 14610 "NXCDefs.h"
+12	6069	441	#line 6069 "NXCDefs.h"
+12	111	441	#line 111 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	111	441	#line 111 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	111	441	#line 111 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	112	441	#line 112 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	112	441	#line 112 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	113	441		div SchwelleLA, SchwelleLA2, __constVal2
+12	112	445	#line 112 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	112	445	#line 112 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	112	445	#line 112 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	113	445		set __signed_stack_001Button1, 0
+12	112	448	#line 112 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	112	448	#line 112 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	113	448		set __signed_stack_002Button1, 32
+12	112	451	#line 112 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	112	451	#line 112 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	113	451		strcat __strbufButton1, __constStr0011
+12	113	455	#line 113 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	114	455		acquire __TextOutMutex
+12	113	456	#line 113 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	114	456		mov __TextOutArgs.Location.X, __signed_stack_001Button1
+12	113	458	#line 113 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	114	458		mov __TextOutArgs.Location.Y, __signed_stack_002Button1
+12	113	460	#line 113 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	114	460		set __TextOutArgs.Options, 0
+12	113	463	#line 113 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	114	463		mov __TextOutArgs.Text, __strbufButton1
+12	113	465	#line 113 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	114	465		syscall 13, __TextOutArgs
+12	113	468	#line 113 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	114	468		mov __D0Button1, __TextOutArgs.Result
+12	113	471	#line 113 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	114	471		release __TextOutMutex
+12	113	472	#line 113 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	113	472	#line 113 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	114	472		set __signed_stack_001Button1, 0
+12	113	475	#line 113 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	113	475	#line 113 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	114	475		set __signed_stack_002Button1, 24
+12	113	478	#line 113 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	113	478	#line 113 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	114	478		strcat __strbufButton1, __constStr0016
+12	114	482	#line 114 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	115	482		acquire __TextOutMutex
+12	114	483	#line 114 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	115	483		mov __TextOutArgs.Location.X, __signed_stack_001Button1
+12	114	485	#line 114 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	115	485		mov __TextOutArgs.Location.Y, __signed_stack_002Button1
+12	114	487	#line 114 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	115	487		set __TextOutArgs.Options, 0
+12	114	490	#line 114 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	115	490		mov __TextOutArgs.Text, __strbufButton1
+12	114	492	#line 114 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	115	492		syscall 13, __TextOutArgs
+12	114	495	#line 114 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	115	495		mov __D0Button1, __TextOutArgs.Result
+12	114	498	#line 114 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	115	498		release __TextOutMutex
+12	114	499	#line 114 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	114	499	#line 114 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	115	499		set __Wait_7qG2_ms_7qG2_000_inline_Button1, 1000
+12	114	502	#line 114 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	7921	502	#line 7921 "NXCDefs.h"
+12	7922	502		wait 1000
+12	7921	504	#line 7921 "NXCDefs.h"
+12	115	504	#line 115 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	6069	504	#line 6069 "NXCDefs.h"
+12	6070	504	#pragma macro 6
+12	6070	504		acquire __PointOutMutex
+12	6070	505		mov __PointOutArgs.Location.X, __constVal200
+12	6070	507		mov __PointOutArgs.Location.Y, __constVal200
+12	6070	509		mov __PointOutArgs.Options, __constVal1
+12	6070	511		syscall 14, __PointOutArgs
+12	6070	514		release __PointOutMutex
+12	14699	515	#line 14699 "NXCDefs.h"
+12	6069	515	#line 6069 "NXCDefs.h"
+12	118	515	#line 118 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	118	515	#line 118 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	119	515		set __signed_stack_001Button1, 3
+12	118	518	#line 118 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	118	518	#line 118 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	119	518		set __D0Button1, 1
+12	118	521	#line 118 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	118	521	#line 118 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	119	521		mov __RBtnArgs.Index, __signed_stack_001Button1
+12	118	523	#line 118 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	119	523		mov __RBtnArgs.Reset, __D0Button1
+12	118	526	#line 118 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	119	526		syscall 20, __RBtnArgs
+12	118	529	#line 118 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	118	529	#line 118 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	119	529	#line 119 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	120	529		not __D0Button1, __RBtnArgs.Pressed
+12	120	532	#line 120 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	121	532		tst 5, __zfButton1, __D0Button1
+12	120	535	#line 120 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	121	535		brtst 4, __NXC_Label_1525, __zfButton1
+12	120	538	#line 120 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	121	538		set __signed_stack_001Button1, 0
+12	120	541	#line 120 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	120	541	#line 120 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	121	541		set __signed_stack_002Button1, 32
+12	120	544	#line 120 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	120	544	#line 120 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	121	544		strcat __strbufButton1, __constStr0009
+12	121	548	#line 121 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	122	548		acquire __TextOutMutex
+12	121	549	#line 121 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	122	549		mov __TextOutArgs.Location.X, __signed_stack_001Button1
+12	121	551	#line 121 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	122	551		mov __TextOutArgs.Location.Y, __signed_stack_002Button1
+12	121	553	#line 121 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	122	553		set __TextOutArgs.Options, 0
+12	121	556	#line 121 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	122	556		mov __TextOutArgs.Text, __strbufButton1
+12	121	558	#line 121 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	122	558		syscall 13, __TextOutArgs
+12	121	561	#line 121 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	122	561		mov __D0Button1, __TextOutArgs.Result
+12	121	564	#line 121 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	122	564		release __TextOutMutex
+12	121	565	#line 121 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	121	565	#line 121 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	122	565		set __signed_stack_001Button1, 0
+12	121	568	#line 121 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	121	568	#line 121 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	122	568		set __signed_stack_002Button1, 24
+12	121	571	#line 121 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	121	571	#line 121 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	122	571		strcat __strbufButton1, __constStr0017
+12	122	575	#line 122 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	123	575		acquire __TextOutMutex
+12	122	576	#line 122 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	123	576		mov __TextOutArgs.Location.X, __signed_stack_001Button1
+12	122	578	#line 122 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	123	578		mov __TextOutArgs.Location.Y, __signed_stack_002Button1
+12	122	580	#line 122 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	123	580		set __TextOutArgs.Options, 0
+12	122	583	#line 122 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	123	583		mov __TextOutArgs.Text, __strbufButton1
+12	122	585	#line 122 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	123	585		syscall 13, __TextOutArgs
+12	122	588	#line 122 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	123	588		mov __D0Button1, __TextOutArgs.Result
+12	122	591	#line 122 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	123	591		release __TextOutMutex
+12	122	592	#line 122 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	122	592	#line 122 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	123	592		set __smuxSensorLegoLightNorm_7qG2_muxport_7qG2_000, 11
+12	122	595	#line 122 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	122	595	#line 122 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	123	595		subcall smuxSensorLegoLightNorm, __smuxSensorLegoLightNorm_return
+12	122	597	#line 122 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	122	597	#line 122 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	122	597	#line 122 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	122	597	#line 122 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	123	597		add __signed_stack_001Button1, __D0smuxSensorLegoLightNorm, __constVal2
+12	122	601	#line 122 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	123	601	#line 123 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	123	601	#line 123 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	124	601		add SchwelleRA2, __signed_stack_001Button1, SchwelleRA1
+12	123	605	#line 123 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	123	605	#line 123 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	125	605	#line 125 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	126	605		jmp __NXC_Label_1524
+12	125	607	#line 125 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	6069	607	#line 6069 "NXCDefs.h"
+12	6070	607	#pragma macro 6
+12	6070	607		acquire __PointOutMutex
+12	6070	608		mov __PointOutArgs.Location.X, __constVal200
+12	6070	610		mov __PointOutArgs.Location.Y, __constVal200
+12	6070	612		mov __PointOutArgs.Options, __constVal1
+12	6070	614		syscall 14, __PointOutArgs
+12	6070	617		release __PointOutMutex
+12	14829	618	#line 14829 "NXCDefs.h"
+12	6069	618	#line 6069 "NXCDefs.h"
+12	126	618	#line 126 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	126	618	#line 126 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	126	618	#line 126 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	127	618	#line 127 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	127	618	#line 127 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	128	618		div SchwelleRA, SchwelleRA2, __constVal2
+12	127	622	#line 127 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	127	622	#line 127 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	127	622	#line 127 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	128	622		set __signed_stack_001Button1, 0
+12	127	625	#line 127 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	127	625	#line 127 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	128	625		set __signed_stack_002Button1, 32
+12	127	628	#line 127 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	127	628	#line 127 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	128	628		strcat __strbufButton1, __constStr0011
+12	128	632	#line 128 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	129	632		acquire __TextOutMutex
+12	128	633	#line 128 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	129	633		mov __TextOutArgs.Location.X, __signed_stack_001Button1
+12	128	635	#line 128 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	129	635		mov __TextOutArgs.Location.Y, __signed_stack_002Button1
+12	128	637	#line 128 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	129	637		set __TextOutArgs.Options, 0
+12	128	640	#line 128 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	129	640		mov __TextOutArgs.Text, __strbufButton1
+12	128	642	#line 128 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	129	642		syscall 13, __TextOutArgs
+12	128	645	#line 128 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	129	645		mov __D0Button1, __TextOutArgs.Result
+12	128	648	#line 128 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	129	648		release __TextOutMutex
+12	128	649	#line 128 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	128	649	#line 128 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	129	649		set __signed_stack_001Button1, 0
+12	128	652	#line 128 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	128	652	#line 128 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	129	652		set __signed_stack_002Button1, 24
+12	128	655	#line 128 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	128	655	#line 128 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	129	655		strcat __strbufButton1, __constStr0018
+12	129	659	#line 129 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	130	659		acquire __TextOutMutex
+12	129	660	#line 129 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	130	660		mov __TextOutArgs.Location.X, __signed_stack_001Button1
+12	129	662	#line 129 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	130	662		mov __TextOutArgs.Location.Y, __signed_stack_002Button1
+12	129	664	#line 129 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	130	664		set __TextOutArgs.Options, 0
+12	129	667	#line 129 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	130	667		mov __TextOutArgs.Text, __strbufButton1
+12	129	669	#line 129 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	130	669		syscall 13, __TextOutArgs
+12	129	672	#line 129 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	130	672		mov __D0Button1, __TextOutArgs.Result
+12	129	675	#line 129 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	130	675		release __TextOutMutex
+12	129	676	#line 129 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	129	676	#line 129 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	130	676		set __Wait_7qG2_ms_7qG2_000_inline_Button1, 1000
+12	129	679	#line 129 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	7921	679	#line 7921 "NXCDefs.h"
+12	7922	679		wait 1000
+12	7921	681	#line 7921 "NXCDefs.h"
+12	130	681	#line 130 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	6069	681	#line 6069 "NXCDefs.h"
+12	6070	681	#pragma macro 6
+12	6070	681		acquire __PointOutMutex
+12	6070	682		mov __PointOutArgs.Location.X, __constVal200
+12	6070	684		mov __PointOutArgs.Location.Y, __constVal200
+12	6070	686		mov __PointOutArgs.Options, __constVal1
+12	6070	688		syscall 14, __PointOutArgs
+12	6070	691		release __PointOutMutex
+12	14918	692	#line 14918 "NXCDefs.h"
+12	6069	692	#line 6069 "NXCDefs.h"
+12	133	692	#line 133 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	133	692	#line 133 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	134	692		set __signed_stack_001Button1, 3
+12	133	695	#line 133 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	133	695	#line 133 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	134	695		set __D0Button1, 1
+12	133	698	#line 133 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	133	698	#line 133 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	134	698		mov __RBtnArgs.Index, __signed_stack_001Button1
+12	133	700	#line 133 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	134	700		mov __RBtnArgs.Reset, __D0Button1
+12	133	703	#line 133 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	134	703		syscall 20, __RBtnArgs
+12	133	706	#line 133 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	133	706	#line 133 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	134	706	#line 134 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	135	706		not __D0Button1, __RBtnArgs.Pressed
+12	135	709	#line 135 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	136	709		tst 5, __zfButton1, __D0Button1
+12	135	712	#line 135 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	136	712		brtst 4, __NXC_Label_1559, __zfButton1
+12	135	715	#line 135 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	136	715		set __signed_stack_001Button1, 0
+12	135	718	#line 135 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	135	718	#line 135 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	136	718		set __signed_stack_002Button1, 32
+12	135	721	#line 135 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	135	721	#line 135 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	136	721		strcat __strbufButton1, __constStr0019
+12	136	725	#line 136 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	137	725		acquire __TextOutMutex
+12	136	726	#line 136 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	137	726		mov __TextOutArgs.Location.X, __signed_stack_001Button1
+12	136	728	#line 136 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	137	728		mov __TextOutArgs.Location.Y, __signed_stack_002Button1
+12	136	730	#line 136 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	137	730		set __TextOutArgs.Options, 0
+12	136	733	#line 136 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	137	733		mov __TextOutArgs.Text, __strbufButton1
+12	136	735	#line 136 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	137	735		syscall 13, __TextOutArgs
+12	136	738	#line 136 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	137	738		mov __D0Button1, __TextOutArgs.Result
+12	136	741	#line 136 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	137	741		release __TextOutMutex
+12	136	742	#line 136 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	136	742	#line 136 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	137	742		set __signed_stack_001Button1, 0
+12	136	745	#line 136 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	136	745	#line 136 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	137	745		set __signed_stack_002Button1, 24
+12	136	748	#line 136 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	136	748	#line 136 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	137	748		strcat __strbufButton1, __constStr0020
+12	137	752	#line 137 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	138	752		acquire __TextOutMutex
+12	137	753	#line 137 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	138	753		mov __TextOutArgs.Location.X, __signed_stack_001Button1
+12	137	755	#line 137 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	138	755		mov __TextOutArgs.Location.Y, __signed_stack_002Button1
+12	137	757	#line 137 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	138	757		set __TextOutArgs.Options, 0
+12	137	760	#line 137 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	138	760		mov __TextOutArgs.Text, __strbufButton1
+12	137	762	#line 137 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	138	762		syscall 13, __TextOutArgs
+12	137	765	#line 137 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	138	765		mov __D0Button1, __TextOutArgs.Result
+12	137	768	#line 137 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	138	768		release __TextOutMutex
+12	137	769	#line 137 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	137	769	#line 137 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	138	769		set __signed_stack_001Button1, 0
+12	137	772	#line 137 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	137	772	#line 137 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	138	772		set __signed_stack_002Button1, 16
+12	137	775	#line 137 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	137	775	#line 137 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	138	775		strcat __strbufButton1, __constStr0021
+12	138	779	#line 138 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	139	779		acquire __TextOutMutex
+12	138	780	#line 138 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	139	780		mov __TextOutArgs.Location.X, __signed_stack_001Button1
+12	138	782	#line 138 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	139	782		mov __TextOutArgs.Location.Y, __signed_stack_002Button1
+12	138	784	#line 138 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	139	784		set __TextOutArgs.Options, 0
+12	138	787	#line 138 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	139	787		mov __TextOutArgs.Text, __strbufButton1
+12	138	789	#line 138 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	139	789		syscall 13, __TextOutArgs
+12	138	792	#line 138 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	139	792		mov __D0Button1, __TextOutArgs.Result
+12	138	795	#line 138 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	139	795		release __TextOutMutex
+12	138	796	#line 138 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	138	796	#line 138 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	139	796		set __signed_stack_001Button1, 0
+12	138	799	#line 138 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	138	799	#line 138 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	139	799		set __signed_stack_002Button1, 8
+12	138	802	#line 138 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	138	802	#line 138 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	139	802		strcat __strbufButton1, __constStr0022
+12	139	806	#line 139 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	140	806		acquire __TextOutMutex
+12	139	807	#line 139 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	140	807		mov __TextOutArgs.Location.X, __signed_stack_001Button1
+12	139	809	#line 139 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	140	809		mov __TextOutArgs.Location.Y, __signed_stack_002Button1
+12	139	811	#line 139 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	140	811		set __TextOutArgs.Options, 0
+12	139	814	#line 139 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	140	814		mov __TextOutArgs.Text, __strbufButton1
+12	139	816	#line 139 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	140	816		syscall 13, __TextOutArgs
+12	139	819	#line 139 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	140	819		mov __D0Button1, __TextOutArgs.Result
+12	139	822	#line 139 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	140	822		release __TextOutMutex
+12	139	823	#line 139 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	140	823	#line 140 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	141	823		jmp __NXC_Label_1558
+12	140	825	#line 140 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	6069	825	#line 6069 "NXCDefs.h"
+12	6070	825	#pragma macro 6
+12	6070	825		acquire __PointOutMutex
+12	6070	826		mov __PointOutArgs.Location.X, __constVal200
+12	6070	828		mov __PointOutArgs.Location.Y, __constVal200
+12	6070	830		mov __PointOutArgs.Options, __constVal1
+12	6070	832		syscall 14, __PointOutArgs
+12	6070	835		release __PointOutMutex
+12	15083	836	#line 15083 "NXCDefs.h"
+12	6069	836	#line 6069 "NXCDefs.h"
+12	141	836	#line 141 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	141	836	#line 141 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	142	836		set __Wait_7qG2_ms_7qG2_000_inline_Button1, 500
+12	141	839	#line 141 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	7921	839	#line 7921 "NXCDefs.h"
+12	7922	839		wait 500
+12	7921	841	#line 7921 "NXCDefs.h"
+12	143	841	#line 143 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	260	841	#line 260 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+12	261	841		subret __Button1_return
+13	425	0	#line 425 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+13	426	0		arrinit smuxSensorTypes, __constVal0, __constVal16
+13	425	4	#line 425 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+13	426	4		arrinit smuxStatus, __constVal0, __constVal4
+13	425	8	#line 425 "C:\Users\Jonas\AppData\Local\Temp\temp.nxc"
+13	426	8		subret ____initialize_global_data_return
+#CLUMPS
+Clump	Name	Offset	File
+0	main	0	C:\Users\Jonas\AppData\Local\Temp\temp.nxc
+1	__ResetSensorSubroutine	360	NXTDefs.h
+2	__ReadLSBytesVar	373	NXTDefs.h
+3	_HTSMUXsendCmd	472	C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h
+4	HTSMUXreadAnalogue	732	C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h
+5	HTSMUXscanPorts	953	C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h
+6	_HTSMUXsetMode	1207	C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h
+7	HTSMUXsetAnalogueActive	1465	C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h
+8	HTSMUXsetAnalogueInactive	1540	C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h
+9	smuxSensorLegoLightRaw	1615	C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h
+10	smuxSensorLegoLightNorm	1630	C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h
+11	smuxSetSensorLegoLight	1646	C:\Users\Jonas\Documents\Schule\Roboter AG\Roboter AG\Aktuell\HTSMUX-driver.h
+12	Button1	1675	C:\Users\Jonas\AppData\Local\Temp\temp.nxc
+13	__initialize_global_data	2518	C:\Users\Jonas\AppData\Local\Temp\temp.nxc

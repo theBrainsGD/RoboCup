@@ -1,0 +1,98 @@
+#include "HTSMUX-driver.h"
+
+#define TS            IN_2
+#define MP            IN_3
+
+/*
+  Lichtsensor Links auﬂen =  Sensor 1
+  Lichtsensor Links innen = Multiplexer Sensor 3
+  Lichtsensor Rechts innen = Multiplexer Sensor 2
+  Lichtsensor Rechts auﬂen =  Sensor 4
+*/
+
+int LL = 0;
+int LI = 0;
+int RI = 0;
+int RA = 0;
+int oben = 0;
+
+task  main(){
+ SetSensorTouch(TS);
+ SetSensorLight(IN_1);                                                          //links aussen
+ SetSensorLight(IN_4);                                                          //rechts aussen
+
+
+SetSensor(IN_3, SENSOR_LOWSPEED);
+ if(HTSMUXscanPorts(MP) <> true)
+ {
+  TextOut(0, LCD_LINE5, "Fehler: Multiplexer");
+  Wait(1000);
+  ClearScreen();
+ }
+
+// smuxSetSensorLegoLight(msensor_S3_1, true);
+ smuxSetSensorLegoLight(msensor_S3_2, true);   // Rechts innen
+ smuxSetSensorLegoLight(msensor_S3_3, true);    // Links innen
+ smuxSetSensorLegoLight(msensor_S3_4, true);  //oben
+ 
+ 
+ while (true){
+ 
+ 
+ until(ButtonPressed(BTNCENTER, 1)){
+ ClearScreen();
+ oben = smuxSensorLegoLightNorm(msensor_S3_4);
+  TextOut(0,LCD_LINE4,"  Oben:");
+  NumOut(50,LCD_LINE5, oben);
+  Wait(200);
+  }
+  Wait(300);
+
+  until(ButtonPressed(BTNCENTER, 1)){
+  ClearScreen();
+ LL = Sensor(IN_1);
+  TextOut(0,LCD_LINE4,"  Links Aussen:");
+  NumOut(50,LCD_LINE5, LL);
+  Wait(200);
+  }
+  
+  Wait(300);
+  
+  until(ButtonPressed(BTNCENTER, 1)){
+  ClearScreen();
+ LI = smuxSensorLegoLightNorm(msensor_S3_3);
+  TextOut(0,LCD_LINE4,"  Links Innen:");
+  NumOut(50,LCD_LINE5, LI);
+  Wait(200);
+  }
+  Wait(300);
+  until(ButtonPressed(BTNCENTER, 1)){
+  ClearScreen();
+ RI = smuxSensorLegoLightNorm(msensor_S3_2);
+  TextOut(0,LCD_LINE4,"  Rechts Innen:");
+  NumOut(50,LCD_LINE5, RI);
+  Wait(200);
+  }
+  Wait(300);
+  until(ButtonPressed(BTNCENTER, 1)){
+  ClearScreen();
+ RA = Sensor(IN_4);
+  TextOut(0,LCD_LINE4,"  Rechts aussen:");
+  NumOut(50,LCD_LINE5, RA);
+  Wait(200);
+  }
+  Wait(300);
+  
+  until(ButtonPressed(BTNCENTER, 1))  {
+  ClearScreen();
+   StopAllTasks();
+  }
+  
+ 
+
+
+ }
+
+
+
+}
